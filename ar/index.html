@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safey — خزنة صور خاصة ومدير كلمات مرور للآيفون</title>
+<meta name="description" content="Safey تطبيق خزنة خاصة للآيفون: أخفِ الصور والفيديو، واحفظ كلمات المرور والبطاقات والملاحظات والملفات — كلها مشفّرة على جهازك بـ AES-256 ومقفلة بـ Face ID. مجانًا على App Store.">
+<link rel="canonical" href="https://safey.app/ar/">
+<link rel="alternate" hreflang="en" href="https://safey.app/">
+<link rel="alternate" hreflang="ar" href="https://safey.app/ar/">
+<link rel="alternate" hreflang="x-default" href="https://safey.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0c1417">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Safey">
+<meta property="og:locale" content="ar_KW">
+<meta property="og:title" content="Safey — خزنة صور خاصة ومدير كلمات مرور للآيفون">
+<meta property="og:description" content="أخفِ الصور والفيديو واحفظ كلمات المرور والبطاقات والملاحظات والملفات في خزنة مشفّرة واحدة، مقفلة بـ Face ID.">
+<meta property="og:url" content="https://safey.app/ar/">
+<meta property="og:image" content="https://safey.app/assets/02_dashboard.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://safey.app/assets/02_dashboard.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-itunes-app" content="app-id=1189852939">
+<!-- Google tag (gtag.js) — Safey / SafeSync GA4 property 161462897 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JGCT9MDZK"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1JGCT9MDZK');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root{
+    --bg: oklch(0.16 0.018 205); --bg-2: oklch(0.13 0.017 208);
+    --surface: oklch(0.215 0.02 204); --surface-2: oklch(0.255 0.021 203);
+    --line: oklch(0.34 0.02 204 / .55); --line-strong: oklch(0.42 0.025 200 / .7);
+    --ink: oklch(0.975 0.008 200); --ink-2: oklch(0.85 0.014 200); --muted: oklch(0.68 0.016 200);
+    --brand: oklch(0.80 0.135 189); --brand-2: oklch(0.70 0.13 191); --brand-deep: oklch(0.52 0.10 193);
+    --on-brand: oklch(0.19 0.04 200); --warm: oklch(0.72 0.15 45);
+    --radius: 18px; --radius-lg: 26px; --ease: cubic-bezier(.22,1,.36,1); --ease-out: cubic-bezier(.16,1,.3,1); --maxw: 1140px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Cairo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:1.0625rem; line-height:1.75; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+  h1,h2,h3{font-family:"Cairo",sans-serif; font-weight:800; line-height:1.18; text-wrap:balance; margin:0}
+  p{margin:0; text-wrap:pretty}
+  a{color:inherit; text-decoration:none}
+  img{max-width:100%; display:block}
+  .mono{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+  .eyebrow{display:inline-flex; align-items:center; gap:9px; font-size:.85rem; color:var(--brand); font-weight:600}
+  .eyebrow::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--brand); box-shadow:0 0 12px var(--brand)}
+  .aura{position:fixed; inset:0; z-index:1; pointer-events:none; overflow:hidden}
+  .aura::before{content:""; position:absolute; width:70vw; height:70vw; right:var(--mx,60%); top:var(--my,-10%); transform:translate(50%,-50%); background:radial-gradient(circle, oklch(0.80 0.135 189 / .16), transparent 62%); transition:right .5s var(--ease), top .5s var(--ease)}
+  .aura::after{content:""; position:absolute; width:55vw; height:55vw; left:-12vw; bottom:-18vw; background:radial-gradient(circle, oklch(0.52 0.10 193 / .13), transparent 65%)}
+  .grain{position:fixed; inset:0; z-index:2; pointer-events:none; opacity:.5; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E")}
+  main,nav,footer{position:relative; z-index:3}
+  nav{position:sticky; top:0; z-index:100; transition:background .3s, border-color .3s; border-bottom:1px solid transparent}
+  nav.stuck{background:oklch(0.14 0.017 208 / .72); backdrop-filter:blur(14px) saturate(1.4); border-bottom-color:var(--line)}
+  .nav-row{display:flex; align-items:center; justify-content:space-between; height:70px}
+  .brand{display:flex; align-items:center; gap:11px; font-weight:800; font-size:1.12rem}
+  .brand .mk{width:30px; height:30px; border-radius:9px; display:grid; place-items:center; background:linear-gradient(150deg,var(--brand),var(--brand-deep)); color:var(--on-brand); box-shadow:0 0 0 1px oklch(0.80 0.135 189 / .3), 0 8px 24px oklch(0.52 0.10 193 / .35)}
+  .nav-right{display:flex; align-items:center; gap:18px}
+  .lang{font-weight:700; font-size:.9rem; color:var(--ink-2)} .lang:hover{color:var(--brand)}
+  .btn{display:inline-flex; align-items:center; gap:10px; font-weight:700; border-radius:13px; padding:13px 20px; font-size:.98rem; cursor:pointer; border:0; transition:transform .3s var(--ease), box-shadow .3s var(--ease)}
+  .btn-primary{background:linear-gradient(150deg,var(--brand),var(--brand-2)); color:var(--on-brand); box-shadow:0 10px 30px oklch(0.52 0.10 193 / .4)}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 16px 40px oklch(0.52 0.10 193 / .55)}
+  .btn-ghost{background:oklch(0.30 0.02 204 / .35); color:var(--ink); border:1px solid var(--line)}
+  .btn-ghost:hover{background:oklch(0.34 0.02 204 / .5); transform:translateY(-1px)}
+  .btn small{display:block; font-size:.68rem; font-weight:500; opacity:.75; line-height:1}
+  .btn .big{font-size:1rem; line-height:1.15}
+  .nav-cta{padding:11px 18px}
+  .hero{padding:clamp(56px,9vw,120px) 0 clamp(60px,7vw,96px)}
+  .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(32px,5vw,72px); align-items:center}
+  .hero h1{font-size:clamp(2.4rem,6vw,4.4rem); margin:22px 0 0}
+  .hero h1 .accent{color:var(--brand)}
+  .lede{color:var(--ink-2); font-size:clamp(1.08rem,1.6vw,1.28rem); max-width:40ch; margin:22px 0 32px; line-height:1.85}
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap; align-items:center}
+  .badges{display:flex; gap:10px; flex-wrap:wrap; margin-top:30px}
+  .chip{display:inline-flex; align-items:center; gap:8px; font-size:.85rem; color:var(--ink-2); background:oklch(0.24 0.02 204 / .5); border:1px solid var(--line); border-radius:999px; padding:8px 14px}
+  .chip svg{width:15px; height:15px; color:var(--brand)}
+  .stage{position:relative; justify-self:center; width:100%; max-width:340px}
+  .stage-glow{position:absolute; inset:-16% -8% -22%; z-index:0; background:radial-gradient(ellipse at 50% 42%, oklch(0.80 0.135 189 / .34), transparent 60%); filter:blur(18px)}
+  .phone{position:relative; z-index:1; margin:0 auto; width:min(292px,84vw); aspect-ratio:292/610; border-radius:44px; padding:11px; background:linear-gradient(160deg, oklch(0.30 0.015 205), oklch(0.17 0.01 205)); box-shadow:0 40px 90px -20px oklch(0.06 0.02 205 / .85), inset 0 0 0 1px oklch(0.45 0.02 200 / .4), 0 0 0 1px oklch(0.10 0.01 205)}
+  .screen{position:relative; width:100%; height:100%; border-radius:34px; overflow:hidden; background:#0b1113}
+  .track{display:flex; width:100%; height:100%; transition:transform .65s var(--ease)}
+  .track img{min-width:100%; width:100%; height:100%; object-fit:cover}
+  .notch{position:absolute; top:12px; left:50%; transform:translateX(-50%); width:98px; height:26px; background:oklch(0.10 0.01 205); border-radius:0 0 16px 16px; z-index:2}
+  .dots{display:flex; gap:8px; justify-content:center; margin-top:20px}
+  .dots button{width:9px; height:9px; border-radius:50%; border:0; padding:0; cursor:pointer; background:var(--line-strong); transition:transform .3s var(--ease), background .3s}
+  .dots button[aria-current="true"]{background:var(--brand); transform:scale(1.35); box-shadow:0 0 12px var(--brand)}
+  .caption{text-align:center; margin-top:16px; color:var(--muted); font-size:.95rem; min-height:1.4em; transition:opacity .35s}
+  section{padding:clamp(64px,9vw,120px) 0}
+  .sec-head{max-width:640px; margin:0 auto clamp(40px,5vw,64px); text-align:center}
+  .sec-head h2{font-size:clamp(1.9rem,4vw,3rem); margin:16px 0 0}
+  .sec-head p{color:var(--ink-2); margin-top:16px; font-size:1.1rem}
+  .lock-demo{display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(32px,5vw,68px); align-items:center}
+  .lock-copy h2{font-size:clamp(1.9rem,3.6vw,2.7rem); margin:16px 0 0}
+  .lock-copy p{color:var(--ink-2); margin:18px 0 26px; max-width:48ch}
+  .gallery{position:relative; border-radius:var(--radius-lg); padding:22px; background:var(--surface); border:1px solid var(--line); box-shadow:0 30px 70px -30px oklch(0.06 0.02 205 / .8)}
+  .gallery-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+  .shot{position:relative; aspect-ratio:1; border-radius:15px; overflow:hidden; background:var(--bg-2)}
+  .shot img{width:100%; height:100%; object-fit:cover; transition:filter .6s var(--ease)}
+  .shot .veil{position:absolute; inset:0; display:grid; place-items:center; opacity:0; background:oklch(0.16 0.03 200 / .82); transition:opacity .5s var(--ease), backdrop-filter .5s var(--ease)}
+  .shot .veil svg{width:26px; height:26px; color:var(--brand); transform:scale(.6); transition:transform .5s var(--ease) .1s}
+  .gallery.locked .shot img{filter:blur(15px) brightness(.5) saturate(.4)}
+  .gallery.locked .shot .veil{opacity:1; backdrop-filter:blur(3px)}
+  .gallery.locked .shot .veil svg{transform:scale(1)}
+  .lock-bar{display:flex; align-items:center; gap:14px; margin-top:20px; flex-wrap:wrap}
+  .lock-state{font-size:.9rem; color:var(--muted)}
+  .lock-state b{color:var(--brand); font-weight:700}
+  .lock-toggle{margin-inline-start:auto}
+  .features{display:grid; grid-template-columns:1fr 1.15fr; gap:clamp(32px,5vw,80px); align-items:start}
+  .features-intro{position:sticky; top:100px}
+  .features-intro h2{font-size:clamp(1.9rem,3.6vw,2.7rem); margin:16px 0 18px}
+  .features-intro p{color:var(--ink-2); max-width:36ch}
+  .flist{display:flex; flex-direction:column}
+  .frow{display:grid; grid-template-columns:auto 1fr; gap:20px; align-items:start; padding:26px 6px; border-top:1px solid var(--line); transition:padding-inline-start .4s var(--ease)}
+  .frow:last-child{border-bottom:1px solid var(--line)}
+  .frow .fi{width:48px; height:48px; border-radius:13px; display:grid; place-items:center; background:oklch(0.26 0.03 195 / .6); border:1px solid var(--line); color:var(--brand); transition:all .4s var(--ease)}
+  .frow .fi svg{width:23px; height:23px}
+  .frow h3{font-size:1.2rem; font-weight:700}
+  .frow p{color:var(--muted); margin-top:6px; font-size:.98rem}
+  .frow:hover{padding-inline-start:16px}
+  .frow:hover .fi{background:linear-gradient(150deg,var(--brand),var(--brand-deep)); color:var(--on-brand); border-color:transparent; box-shadow:0 8px 24px oklch(0.52 0.10 193 / .4)}
+  .security{background:linear-gradient(180deg, var(--bg-2), oklch(0.11 0.016 210)); border-block:1px solid var(--line)}
+  .sec-grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,68px); align-items:center}
+  .sec-copy h2{font-size:clamp(1.9rem,3.6vw,2.75rem); margin:16px 0 0}
+  .sec-copy p{color:var(--ink-2); margin:18px 0 0; max-width:48ch}
+  .sec-points{list-style:none; padding:0; margin:26px 0 0; display:flex; flex-direction:column; gap:14px}
+  .sec-points li{display:flex; gap:13px; align-items:flex-start; color:var(--ink-2)}
+  .sec-points svg{width:20px; height:20px; color:var(--brand); flex:none; margin-top:5px}
+  .crypt{background:oklch(0.10 0.015 208); border:1px solid var(--line-strong); border-radius:var(--radius-lg); padding:26px; box-shadow:0 30px 70px -30px oklch(0.05 0.02 205 / .9); overflow:hidden}
+  .crypt-top{display:flex; align-items:center; gap:9px; margin-bottom:20px}
+  .crypt-top i{width:11px; height:11px; border-radius:50%; background:var(--line-strong)}
+  .crypt-top i:first-child{background:var(--warm)}
+  .crypt-top span{margin-inline-start:auto; font-size:.75rem; color:var(--muted)}
+  .crypt-line{font-size:.92rem; line-height:2.1; word-break:break-word}
+  .crypt-line .k{color:var(--muted)}
+  .crypt-line .cipher{color:var(--brand); font-family:"JetBrains Mono",monospace; direction:ltr; unicode-bidi:embed; display:inline-block}
+  .crypt-tag{display:inline-flex; align-items:center; gap:8px; margin-top:18px; font-size:.82rem; color:var(--brand); background:oklch(0.26 0.05 193 / .4); border:1px solid oklch(0.5 0.1 193 / .4); border-radius:8px; padding:7px 12px}
+  .tiers{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:960px; margin:0 auto}
+  .tier{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); padding:30px 26px; display:flex; flex-direction:column; transition:transform .4s var(--ease), border-color .4s}
+  .tier:hover{transform:translateY(-4px); border-color:var(--line-strong)}
+  .tier.pop{background:linear-gradient(180deg, oklch(0.24 0.03 195 / .7), var(--surface)); border:1px solid oklch(0.55 0.1 192 / .6); box-shadow:0 30px 70px -34px oklch(0.52 0.10 193 / .5)}
+  .tier .tag{font-size:.78rem; color:var(--brand); font-weight:700}
+  .tier .amt{font-weight:800; font-size:2.1rem; margin:14px 0 4px}
+  .tier .per{color:var(--muted); font-size:.9rem}
+  .tier .cap{color:var(--ink-2); margin-top:16px; font-size:.98rem; flex:1}
+  .tier .pill{align-self:flex-start; margin-top:20px; font-size:.82rem; color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:6px 12px}
+  .tier.pop .pill{color:var(--brand); border-color:oklch(0.5 0.1 193 / .5)}
+  .faq{max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:12px}
+  details{background:var(--surface); border:1px solid var(--line); border-radius:15px; overflow:hidden; transition:border-color .3s}
+  details[open]{border-color:var(--line-strong)}
+  summary{font-weight:700; font-size:1.05rem; padding:20px 22px; cursor:pointer; list-style:none; display:flex; align-items:center; justify-content:space-between; gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary .plus{color:var(--brand); font-size:1.4rem; line-height:1; transition:transform .35s var(--ease)}
+  details[open] summary .plus{transform:rotate(45deg)}
+  details .body{padding:0 22px 22px; color:var(--ink-2); font-size:1rem}
+  .final{text-align:center}
+  .final-card{position:relative; max-width:880px; margin:0 auto; padding:clamp(44px,6vw,76px) clamp(24px,4vw,56px); border-radius:var(--radius-lg); background:linear-gradient(160deg, oklch(0.24 0.035 194 / .6), oklch(0.14 0.017 208)); border:1px solid oklch(0.5 0.09 193 / .45); overflow:hidden}
+  .final-card::before{content:""; position:absolute; width:60%; height:120%; top:-40%; left:-10%; background:radial-gradient(circle, oklch(0.80 0.135 189 / .22), transparent 60%)}
+  .final h2{font-size:clamp(2rem,4.4vw,3.4rem); position:relative}
+  .final p{color:var(--ink-2); max-width:44ch; margin:18px auto 30px; position:relative; font-size:1.1rem}
+  .final .cta-row{justify-content:center; position:relative}
+  footer{border-top:1px solid var(--line); padding:50px 0 60px; color:var(--muted); font-size:.92rem}
+  .foot-row{display:flex; flex-wrap:wrap; gap:18px 30px; align-items:center; justify-content:space-between}
+  .foot-links a{color:var(--muted); margin-inline-start:22px} .foot-links a:first-child{margin-inline-start:0}
+  .foot-links a:hover{color:var(--brand)}
+  .reveal{opacity:1}
+  .js .reveal{opacity:0; transform:translateY(26px); transition:opacity .8s var(--ease-out), transform .8s var(--ease-out)}
+  .js .reveal.in{opacity:1; transform:none}
+  .js .stagger>*{opacity:0; transform:translateY(20px); transition:opacity .7s var(--ease-out), transform .7s var(--ease-out)}
+  .js .stagger.in>*{opacity:1; transform:none}
+  .js .stagger.in>*:nth-child(2){transition-delay:.07s} .js .stagger.in>*:nth-child(3){transition-delay:.14s}
+  .js .stagger.in>*:nth-child(4){transition-delay:.21s} .js .stagger.in>*:nth-child(5){transition-delay:.28s} .js .stagger.in>*:nth-child(6){transition-delay:.35s}
+  .js .hero .load{opacity:0; transform:translateY(24px); animation:rise .9s var(--ease-out) forwards}
+  .js .hero .load.d1{animation-delay:.05s} .js .hero .load.d2{animation-delay:.15s} .js .hero .load.d3{animation-delay:.25s} .js .hero .load.d4{animation-delay:.35s}
+  .js .hero .stage{opacity:0; animation:phoneIn 1.1s var(--ease-out) .2s forwards}
+  @keyframes rise{to{opacity:1; transform:none}}
+  @keyframes phoneIn{from{opacity:0; transform:translateY(34px) scale(.97)} to{opacity:1; transform:none}}
+  @media (max-width:900px){
+    .hero-grid,.lock-demo,.features,.sec-grid{grid-template-columns:1fr}
+    .hero-grid{gap:44px} .features-intro{position:static} .stage{order:-1; max-width:300px}
+    .tiers{grid-template-columns:1fr; max-width:420px} .sec-grid .crypt{order:-1}
+  }
+  @media (max-width:560px){ .wrap{padding:0 18px} .nav-cta small{display:none} .gallery-grid{gap:10px} .btn{padding:12px 18px} }
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.001ms !important; transition-duration:.001ms !important; animation-delay:0 !important}
+    .js .reveal,.js .stagger>*,.js .hero .load,.js .hero .stage{opacity:1 !important; transform:none !important; animation:none !important}
+  }
+</style>
+</head>
+<body>
+<div class="aura" id="aura"></div>
+<div class="grain"></div>
+
+<nav id="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="/ar/"><span class="mk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" fill="currentColor"/></svg></span> Safey</a>
+    <div class="nav-right">
+      <a class="lang" href="/">English</a>
+      <a class="btn btn-primary nav-cta" href="https://apps.apple.com/app/id1189852939" rel="noopener"><span><small>مجانًا على</small><span class="big">App&nbsp;Store</span></span></a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow load d1">آيفون · تشفير AES-256 · على جهازك</span>
+        <h1 class="load d2">الخزنة لكل ما تفضّل إبقاءه <span class="accent">مخفيًّا</span>.</h1>
+        <p class="lede load d3">انقل صورك ومقاطعك الخاصة خارج ألبوم الكاميرا، واحفظ كلمات المرور والبطاقات والملاحظات والملفات في خزنة مشفّرة واحدة — تُفتح ببصمة وجهك وحدها.</p>
+        <div class="cta-row load d4">
+          <a class="btn btn-primary" href="https://apps.apple.com/app/id1189852939" rel="noopener"><span><small>حمّله من</small><span class="big">App&nbsp;Store</span></span></a>
+          <a class="btn btn-ghost" href="#how">شاهد كيف يعمل</a>
+        </div>
+        <div class="badges load d4">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> تشفير من طرف إلى طرف</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none"><path d="M12 15a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="1.6"/><path d="M5 11V8a7 7 0 0114 0v3" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="11" width="16" height="10" rx="2.5" stroke="currentColor" stroke-width="1.6"/></svg> قفل Face ID</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> يُقفل تلقائيًا فورًا</span>
+        </div>
+      </div>
+      <div class="stage" id="carousel">
+        <div class="stage-glow"></div>
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="track" id="track">
+              <img src="/assets/02_dashboard.png" alt="الشاشة الرئيسية لخزنة Safey: كلمات المرور والبطاقات والملاحظات والملفات" width="292" height="610">
+              <img src="/assets/03_generator.png" alt="مولّد كلمات المرور القوية المدمج في Safey" width="292" height="610">
+              <img src="/assets/06_lock.png" alt="شاشة قفل Face ID التي تحمي خزنة Safey" width="292" height="610">
+            </div>
+          </div>
+        </div>
+        <div class="dots" id="dots"></div>
+        <p class="caption" id="caption">خزنتك كاملة، بضغطة واحدة</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="how">
+    <div class="wrap lock-demo">
+      <div class="lock-copy reveal">
+        <span class="eyebrow">مشكلة ألبوم الكاميرا</span>
+        <h2>ألبومك «المخفي» ليس مخفيًّا فعلًا.</h2>
+        <p>أي شخص يفتح هاتفك يمكنه رؤيته. ينقل Safey صورك ومقاطعك الخاصة إلى خزنة مشفّرة لا تُفتح إلا لك — لتسلّم هاتفك لصديق أو طفل دون أدنى قلق.</p>
+        <div class="lock-bar">
+          <span class="lock-state" id="lockState">الحالة: <b style="color:var(--warm)">مكشوف</b> · يراها أي أحد</span>
+          <button class="btn btn-primary lock-toggle" id="lockBtn" aria-pressed="false">أقفل الخزنة</button>
+        </div>
+      </div>
+      <div class="gallery" id="gallery" aria-live="polite">
+        <div class="gallery-grid">
+          <div class="shot"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&q=70" alt="صورة رحلة خاصة" loading="lazy"><div class="veil"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.7"/></svg></div></div>
+          <div class="shot"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&q=70" alt="صورة طبيعة خاصة" loading="lazy"><div class="veil"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.7"/></svg></div></div>
+          <div class="shot"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=400&q=70" alt="صورة منظر خاص" loading="lazy"><div class="veil"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.7"/></svg></div></div>
+          <div class="shot"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=70" alt="صورة ذكرى خاصة" loading="lazy"><div class="veil"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.7"/></svg></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap features">
+      <div class="features-intro reveal">
+        <span class="eyebrow">خزنة واحدة، لا خمسة تطبيقات</span>
+        <h2>كل ما هو خاص، في مكان واحد.</h2>
+        <p>معظم التطبيقات تخفي الصور فقط، أو كلمات المرور فقط. أما Safey فيحفظها جميعًا — بالتشفير نفسه، خلف القفل نفسه.</p>
+      </div>
+      <div class="flist stagger">
+        <div class="frow"><span class="fi"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="9" width="12" height="12" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M8 9V7a4 4 0 018 0" stroke="currentColor" stroke-width="1.7"/><circle cx="18" cy="7" r="3" stroke="currentColor" stroke-width="1.7"/></svg></span><div><h3>كلمات المرور والحسابات</h3><p>كل تسجيل دخول مع مولّد لكلمات مرور قوية وفريدة بضغطة واحدة.</p></div></div>
+        <div class="frow"><span class="fi"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.7"/></svg></span><div><h3>البطاقات والأرقام السرية</h3><p>تفاصيل الدفع مشفّرة، ولا تظهر إلا بعد فحص بيومتري.</p></div></div>
+        <div class="frow"><span class="fi"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="4" width="14" height="16" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M9 9h6M9 13h6M9 17h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h3>ملاحظات آمنة</h3><p>رموز الاسترداد وكلمات مرور الواي فاي وبيانات الجواز — تبقى خاصة.</p></div></div>
+        <div class="frow"><span class="fi"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h7l5 5v11a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.7"/><path d="M13 4v5h5" stroke="currentColor" stroke-width="1.7"/></svg></span><div><h3>الملفات والمستندات</h3><p>الهويات والشهادات وملفات PDF والعقود، بأمان داخل الخزنة.</p></div></div>
+        <div class="frow"><span class="fi"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.7"/><circle cx="9" cy="10" r="1.6" stroke="currentColor" stroke-width="1.5"/><path d="M5 17l4.5-4 3 2.5L16 11l3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>صور ومقاطع مخفية</h3><p>خارج ألبوم الكاميرا، إلى ألبوم مقفل بـ Face ID لا يفتحه أحد.</p></div></div>
+        <div class="frow"><span class="fi"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg></span><div><h3>بحث واستعادة</h3><p>اعثر على أي شيء في ثانية، واستعد خزنتك على آيفون جديد بتسجيل الدخول.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="security">
+    <div class="wrap sec-grid">
+      <div class="sec-copy reveal">
+        <span class="eyebrow">كيف يعمل التشفير</span>
+        <h2>مقفلة قبل أن تغادر هاتفك أصلًا.</h2>
+        <p>كل حقل حساس يُشفّر بـ AES-256 على جهازك. المفتاح يعيش داخل الحاوية الآمنة في آيفونك ولا يغادرها أبدًا — فلا أحد يستطيع قراءة بياناتك. لا مهاجم. ولا نحن.</p>
+        <ul class="sec-points">
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> مشفّرة على الجهاز، قبل أي مزامنة</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> المفتاح لا يغادر Keychain أبدًا</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> تُقفل تلقائيًا لحظة مغادرتك التطبيق</li>
+        </ul>
+      </div>
+      <div class="crypt reveal" id="crypt">
+        <div class="crypt-top"><i></i><i></i><i></i><span>الحاوية الآمنة</span></div>
+        <div class="crypt-line"><span class="k">ملاحظة</span>  ← رمز خزنة المنزل: 4471</div>
+        <div class="crypt-line"><span class="k">aes-256</span> ← <span class="cipher" id="cCipher">sfy1:••••••••••••••••••••</span></div>
+        <span class="crypt-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.8"/></svg> مشفّرة على الجهاز</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head reveal">
+      <span class="eyebrow">مجاني للبدء</span>
+      <h2>خزنتك كاملة، مجانًا.</h2>
+      <p>طوّر فقط حين تحتاج مساحة أكبر للملفات والصور.</p>
+    </div>
+    <div class="wrap"><div class="tiers stagger">
+      <div class="tier"><span class="tag">مجاني</span><div class="amt">مجانًا</div><div class="per">للأبد</div><p class="cap">خزنتك الكاملة — كلمات المرور والبطاقات والملاحظات والملفات والصور المخفية، مع قفل Face ID وتشفير AES-256.</p><span class="pill">500 ميغابايت مضمّنة</span></div>
+      <div class="tier pop"><span class="tag">الأكثر مساحة</span><div class="amt">50 جيجابايت</div><div class="per">من 2.99$ شهريًا</div><p class="cap">مساحة وفيرة لصورك ومقاطعك ومستنداتك الخاصة، مع كل مزايا الخطة المجانية.</p><span class="pill">الأكثر شيوعًا</span></div>
+      <div class="tier"><span class="tag">الأقصى</span><div class="amt">200 جيجابايت</div><div class="per">من 5.99$ شهريًا</div><p class="cap">أقصى مساحة لكل ما تحفظه — عمرٌ كامل من الملفات الخاصة.</p><span class="pill">للمحترفين</span></div>
+    </div></div>
+  </section>
+
+  <section>
+    <div class="sec-head reveal"><span class="eyebrow">معلومات مفيدة</span><h2>أسئلة، بإجابات.</h2></div>
+    <div class="wrap"><div class="faq stagger">
+      <details open><summary>كيف أخفي الصور والفيديو؟ <span class="plus">+</span></summary><div class="body">افتح خزنة الصور في Safey واستورد الصور والمقاطع التي تريد إخفاءها. تُنقل إلى ألبوم مشفّر مقفل بـ Face ID وتُزال من ألبوم الكاميرا، فلا تظهر حين يتصفّح أحد صورك.</div></details>
+      <details><summary>هل Safey خاص فعلًا؟ <span class="plus">+</span></summary><div class="body">نعم. كلمات المرور وأرقام البطاقات وأرقام CVC والأرقام السرية ومحتوى الملاحظات وصورك، كلها تُشفّر بـ AES-256 على آيفونك قبل رفعها. ومفتاح التشفير يعيش في Keychain على جهازك ولا يغادره، فلا يستطيع أحد قراءة بياناتك.</div></details>
+      <details><summary>ماذا يمكنني أن أحفظ في Safey؟ <span class="plus">+</span></summary><div class="body">كلمات المرور والحسابات، بطاقات الدفع، الملاحظات الآمنة، أي ملفات أو مستندات (هويات، شهادات، PDF)، والصور والفيديو الخاصة في ألبوم مخفي مقفل بـ Face ID.</div></details>
+      <details><summary>ماذا لو فقدت هاتفي؟ <span class="plus">+</span></summary><div class="body">خزنتك مقفلة خلف Face ID أو Touch ID أو رمز جهازك — لا أحد يفتح Safey من دونه. وبياناتك تُزامَن بخصوصية، فتستعيد كل شيء على آيفون جديد بتسجيل الدخول.</div></details>
+      <details><summary>هل Safey مجاني؟ <span class="plus">+</span></summary><div class="body">Safey مجاني للتحميل والاستخدام. والاشتراكات الاختيارية تضيف مساحة تخزين إضافية (50 أو 200 جيجابايت) لملفاتك وصورك.</div></details>
+    </div></div>
+  </section>
+
+  <section class="final">
+    <div class="wrap"><div class="final-card reveal">
+      <h2>أبقِها لك وحدك.</h2>
+      <p>حمّل Safey وأقفل صورك وكلمات مرورك وملفاتك الخاصة — مجانًا على App Store.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="https://apps.apple.com/app/id1189852939" rel="noopener"><span><small>حمّله من</small><span class="big">App&nbsp;Store</span></span></a></div>
+    </div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <div>© 2026 Safey — خزنة خاصة من <a href="https://khatibdesigns.com" style="color:var(--ink-2)">Khatib Designs</a>.</div>
+    <div class="foot-links">
+      <a href="https://apps.apple.com/app/id1189852939">App Store</a>
+      <a href="/ar/blog/">الأدلة</a>
+      <a href="/">English</a>
+      <a href="/ar/privacy/">الخصوصية</a>
+      <a href="/ar/terms/">الشروط</a>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Safey — خزنة صور خاصة ومدير كلمات مرور","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"خزنة خاصة للآيفون: أخفِ الصور والفيديو، واحفظ كلمات المرور والبطاقات والملاحظات والملفات، محميّة بـ Face ID وتشفير AES-256.","url":"https://safey.app/ar/","downloadUrl":"https://apps.apple.com/app/id1189852939","publisher":{"@type":"Organization","name":"Khatib Designs","url":"https://khatibdesigns.com"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ar","mainEntity":[
+{"@type":"Question","name":"كيف أخفي الصور والفيديو في الآيفون باستخدام Safey؟","acceptedAnswer":{"@type":"Answer","text":"افتح خزنة الصور في Safey واستورد الصور والمقاطع التي تريد إخفاءها. تُنقل إلى ألبوم مشفّر مقفل بـ Face ID وتُزال من ألبوم الكاميرا."}},
+{"@type":"Question","name":"هل Safey خاص فعلًا؟","acceptedAnswer":{"@type":"Answer","text":"نعم، تُشفّر الحقول الحساسة وصورك بـ AES-256 على جهازك قبل الرفع، ويبقى المفتاح في Keychain على جهازك ولا يغادره."}},
+{"@type":"Question","name":"ماذا يمكنني أن أحفظ في Safey؟","acceptedAnswer":{"@type":"Answer","text":"كلمات المرور والبطاقات والملاحظات الآمنة وأي ملفات أو مستندات، والصور والفيديو في ألبوم مخفي مقفل بـ Face ID."}},
+{"@type":"Question","name":"ماذا لو فقدت هاتفي؟","acceptedAnswer":{"@type":"Answer","text":"خزنتك مقفلة خلف Face ID أو رمز جهازك، وتُزامَن بخصوصية فتستعيدها على آيفون جديد بتسجيل الدخول."}},
+{"@type":"Question","name":"هل Safey مجاني؟","acceptedAnswer":{"@type":"Answer","text":"Safey مجاني للتحميل، والاشتراكات الاختيارية تضيف مساحة إضافية (50 أو 200 جيجابايت)."}}]}
+</script>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('stuck', window.scrollY > 12); };
+  onScroll(); addEventListener('scroll', onScroll, {passive:true});
+  var aura = document.getElementById('aura');
+  if(!reduce){ addEventListener('pointermove', function(e){
+    aura.style.setProperty('--mx', (100 - e.clientX/innerWidth*100).toFixed(1)+'%');
+    aura.style.setProperty('--my', (e.clientY/innerHeight*100).toFixed(1)+'%');
+  }, {passive:true}); }
+  var revs = [].slice.call(document.querySelectorAll('.reveal,.stagger'));
+  function reveal(el){ el.classList.add('in'); }
+  function checkAll(){ var vh=innerHeight; revs.forEach(function(el){ if(!el.classList.contains('in') && el.getBoundingClientRect().top < vh*0.92) reveal(el); }); }
+  checkAll();
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){reveal(x.target);io.unobserve(x.target);}});},{threshold:0.14, rootMargin:'0px 0px -6% 0px'});
+    revs.forEach(function(el){ if(!el.classList.contains('in')) io.observe(el); });
+  }
+  addEventListener('scroll', checkAll, {passive:true});
+  setTimeout(function(){ revs.forEach(reveal); }, 2200);
+  var track=document.getElementById('track');
+  var imgs=[].slice.call(track.querySelectorAll('img'));
+  var caps=['خزنتك كاملة، بضغطة واحدة','كلمات مرور قوية بضغطة واحدة','مقفلة بـ Face ID، دائمًا'];
+  var dotsWrap=document.getElementById('dots'), caption=document.getElementById('caption');
+  var cur=0, timer;
+  imgs.forEach(function(_,i){ var b=document.createElement('button'); b.setAttribute('aria-label','شاشة '+(i+1)); b.setAttribute('aria-current', i===0?'true':'false'); b.onclick=function(){ go(i); rest(); }; dotsWrap.appendChild(b); });
+  function go(i){ cur=i; track.style.transform='translateX('+(i*100)+'%)'; dotsWrap.querySelectorAll('button').forEach(function(d,x){ d.setAttribute('aria-current', x===i?'true':'false'); }); caption.style.opacity=0; setTimeout(function(){ caption.textContent=caps[i]; caption.style.opacity=1; }, 220); }
+  function tick(){ go((cur+1)%imgs.length); }
+  function rest(){ clearInterval(timer); if(!reduce) timer=setInterval(tick, 3800); }
+  rest();
+  var gallery=document.getElementById('gallery'), lockBtn=document.getElementById('lockBtn'), lockState=document.getElementById('lockState');
+  lockBtn.onclick=function(){ var locked=gallery.classList.toggle('locked'); lockBtn.setAttribute('aria-pressed', locked); lockBtn.textContent = locked ? 'افتح القفل' : 'أقفل الخزنة';
+    lockState.innerHTML = locked ? 'الحالة: <b>محميّة</b> · مشفّرة ومقفلة بـ Face ID' : 'الحالة: <b style="color:var(--warm)">مكشوف</b> · يراها أي أحد'; };
+  var cCipher=document.getElementById('cCipher'), crypt=document.getElementById('crypt');
+  var CH='ABCDEF0123456789abcdef•/+='; var base='sfy1:';
+  function scramble(){ if(reduce) return; var len=20, frame=0, max=34; clearInterval(crypt._t);
+    crypt._t=setInterval(function(){ var s=base; for(var i=0;i<len;i++){ s += (i < (frame/max*len)) ? '•' : CH[Math.floor(Math.random()*CH.length)]; } cCipher.textContent=s; frame++; if(frame>max){ clearInterval(crypt._t); cCipher.textContent=base+'••••••••••••••••••••'; } }, 45); }
+  if('IntersectionObserver' in window){ var io2=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){scramble();}});},{threshold:0.5}); io2.observe(crypt); }
+})();
+</script>
+</body>
+</html>

@@ -45,6 +45,9 @@ nav{position:sticky; top:0; z-index:50; border-bottom:1px solid var(--line);
 .btn-app:hover{transform:translateY(-1px); color:var(--on-brand)}
 .btn-app small{display:block; font-size:.62rem; font-weight:500; opacity:.75; line-height:1}
 .btn-app b{font-weight:700; line-height:1.1}
+.nav-right{display:flex; align-items:center; gap:18px}
+.lang{font-family:"Sora"; font-weight:600; font-size:.9rem; color:var(--ink-2)}
+.lang:hover{color:var(--brand)}
 
 /* page header */
 .page{padding:clamp(40px,6vw,72px) 0 clamp(56px,8vw,96px)}
@@ -107,4 +110,17 @@ footer{border-top:1px solid var(--line); padding:40px 0 56px; color:var(--muted)
 .foot-links a{color:var(--muted); margin-left:20px} .foot-links a:first-child{margin-left:0}
 .foot-links a:hover{color:var(--brand)}
 
-@media (max-width:560px){ .wrap{padding:0 18px} .btn-app small{display:none} }
+@media (max-width:560px){ .wrap{padding:0 18px} .btn-app small{display:none} .nav-right{gap:12px} }
+
+/* ---- RTL / Arabic ---- */
+[dir="rtl"] body,
+[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3,
+[dir="rtl"] .brand,[dir="rtl"] .btn,[dir="rtl"] .btn-app,[dir="rtl"] .lang,[dir="rtl"] summary,
+[dir="rtl"] .crumbs,[dir="rtl"] .eyebrow,[dir="rtl"] .meta,[dir="rtl"] .post .date{
+  font-family:"Cairo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+[dir="rtl"] body::before{background:radial-gradient(60vw 50vw at 25% -8%, oklch(0.80 0.135 189 / .12), transparent 60%)}
+[dir="rtl"] .foot-links a{margin-left:0; margin-right:20px}
+[dir="rtl"] .foot-links a:first-child{margin-right:0}
+[dir="rtl"] .prose ul,[dir="rtl"] .prose ol{padding-left:0; padding-right:22px}
+[dir="rtl"] .h1,[dir="rtl"] .page h1{letter-spacing:normal}
