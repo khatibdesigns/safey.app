@@ -1,0 +1,110 @@
+/* Safey — shared dark theme for content pages (matches the landing) */
+:root{
+  --bg: oklch(0.16 0.018 205);
+  --bg-2: oklch(0.13 0.017 208);
+  --surface: oklch(0.215 0.02 204);
+  --line: oklch(0.34 0.02 204 / .55);
+  --line-strong: oklch(0.42 0.025 200 / .7);
+  --ink: oklch(0.975 0.008 200);
+  --ink-2: oklch(0.85 0.014 200);
+  --muted: oklch(0.68 0.016 200);
+  --brand: oklch(0.80 0.135 189);
+  --brand-2: oklch(0.70 0.13 191);
+  --brand-deep: oklch(0.52 0.10 193);
+  --on-brand: oklch(0.19 0.04 200);
+  --radius: 18px;
+  --ease: cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:1.0625rem; line-height:1.7; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Sora",sans-serif; font-weight:700; letter-spacing:-.02em; line-height:1.12; margin:0}
+a{color:var(--brand); text-decoration:none; transition:color .25s}
+a:hover{color:var(--brand-2)}
+.wrap{max-width:760px; margin:0 auto; padding:0 24px}
+
+/* ambient glow */
+body::before{content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:radial-gradient(60vw 50vw at 75% -8%, oklch(0.80 0.135 189 / .12), transparent 60%)}
+main,nav,footer{position:relative; z-index:1}
+
+/* nav */
+nav{position:sticky; top:0; z-index:50; border-bottom:1px solid var(--line);
+  background:oklch(0.14 0.017 208 / .78); backdrop-filter:blur(14px) saturate(1.4)}
+.nav-row{display:flex; align-items:center; justify-content:space-between; height:66px; max-width:1000px; margin:0 auto; padding:0 24px}
+.brand{display:flex; align-items:center; gap:11px; font-family:"Sora"; font-weight:700; font-size:1.1rem; letter-spacing:-.02em; color:var(--ink)}
+.brand .mk{width:29px; height:29px; border-radius:9px; display:grid; place-items:center;
+  background:linear-gradient(150deg,var(--brand),var(--brand-deep)); color:var(--on-brand);
+  box-shadow:0 0 0 1px oklch(0.80 0.135 189 / .3), 0 8px 20px oklch(0.52 0.10 193 / .3)}
+.btn-app{display:inline-flex; align-items:center; gap:9px; font-family:"Sora"; font-weight:600; font-size:.92rem;
+  color:var(--on-brand); background:linear-gradient(150deg,var(--brand),var(--brand-2));
+  border-radius:12px; padding:10px 16px; box-shadow:0 8px 22px oklch(0.52 0.10 193 / .35); transition:transform .3s var(--ease), color .25s}
+.btn-app:hover{transform:translateY(-1px); color:var(--on-brand)}
+.btn-app small{display:block; font-size:.62rem; font-weight:500; opacity:.75; line-height:1}
+.btn-app b{font-weight:700; line-height:1.1}
+
+/* page header */
+.page{padding:clamp(40px,6vw,72px) 0 clamp(56px,8vw,96px)}
+.crumbs{font-family:"JetBrains Mono",monospace; font-size:.78rem; color:var(--muted); margin-bottom:20px}
+.crumbs a{color:var(--muted)} .crumbs a:hover{color:var(--brand)}
+.eyebrow{display:inline-flex; align-items:center; gap:9px; font-family:"JetBrains Mono",monospace; font-size:.78rem; color:var(--brand); margin-bottom:14px}
+.eyebrow::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--brand); box-shadow:0 0 12px var(--brand)}
+.page h1{font-size:clamp(2rem,4.5vw,3.1rem); font-weight:800; letter-spacing:-.03em; text-wrap:balance}
+.meta{color:var(--muted); font-family:"JetBrains Mono",monospace; font-size:.82rem; margin-top:14px}
+
+/* prose */
+.prose{margin-top:34px; color:var(--ink-2)}
+.prose > *:first-child{margin-top:0}
+.prose h2{color:var(--ink); font-size:1.35rem; margin:38px 0 12px}
+.prose h3{color:var(--ink); font-size:1.12rem; margin:28px 0 8px}
+.prose p{margin:0 0 16px; text-wrap:pretty}
+.prose ul,.prose ol{margin:0 0 18px; padding-left:22px}
+.prose li{margin:6px 0}
+.prose strong{color:var(--ink); font-weight:700}
+.prose .lead{font-size:1.18rem; color:var(--ink); line-height:1.6}
+.prose hr{border:0; border-top:1px solid var(--line); margin:34px 0}
+
+/* content panel */
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:clamp(24px,4vw,40px); margin-top:30px; box-shadow:0 24px 60px -34px oklch(0.06 0.02 205 / .8)}
+.panel .prose{margin-top:0}
+
+/* blog post cards */
+.posts{display:flex; flex-direction:column; gap:14px; margin-top:34px}
+.post{display:block; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:24px;
+  transition:transform .35s var(--ease), border-color .35s}
+.post:hover{transform:translateY(-3px); border-color:var(--line-strong)}
+.post h2{color:var(--ink); font-size:1.3rem; margin:0 0 8px}
+.post p{color:var(--ink-2); margin:0 0 12px}
+.post .date{font-family:"JetBrains Mono",monospace; font-size:.76rem; color:var(--muted)}
+
+/* CTA box */
+.cta{background:linear-gradient(160deg, oklch(0.24 0.035 194 / .55), var(--surface));
+  border:1px solid oklch(0.5 0.09 193 / .4); border-radius:var(--radius); padding:28px 26px; margin:32px 0; text-align:center}
+.cta p{margin:0 0 16px; color:var(--ink)}
+.btn{display:inline-flex; align-items:center; gap:8px; font-family:"Sora"; font-weight:600; font-size:.98rem;
+  color:var(--on-brand); background:linear-gradient(150deg,var(--brand),var(--brand-2));
+  border-radius:12px; padding:13px 20px; box-shadow:0 10px 28px oklch(0.52 0.10 193 / .4); transition:transform .3s var(--ease), color .25s}
+.btn:hover{transform:translateY(-2px); color:var(--on-brand)}
+
+/* faq accordion */
+.faq{margin-top:30px}
+.faq h2{color:var(--ink); font-size:1.5rem; margin:0 0 16px}
+details{background:var(--surface); border:1px solid var(--line); border-radius:14px; margin-bottom:12px; overflow:hidden}
+details[open]{border-color:var(--line-strong)}
+summary{font-family:"Sora"; font-weight:600; font-size:1.02rem; color:var(--ink); padding:18px 20px; cursor:pointer; list-style:none; display:flex; justify-content:space-between; gap:16px; align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+"; color:var(--brand); font-size:1.3rem; line-height:1; transition:transform .3s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 20px 20px; margin:0; color:var(--ink-2)}
+
+/* footer */
+footer{border-top:1px solid var(--line); padding:40px 0 56px; color:var(--muted); font-size:.9rem; margin-top:56px}
+.foot-row{display:flex; flex-wrap:wrap; gap:14px 26px; align-items:center; justify-content:space-between; max-width:1000px; margin:0 auto; padding:0 24px}
+.foot-links a{color:var(--muted); margin-left:20px} .foot-links a:first-child{margin-left:0}
+.foot-links a:hover{color:var(--brand)}
+
+@media (max-width:560px){ .wrap{padding:0 18px} .btn-app small{display:none} }
