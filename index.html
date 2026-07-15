@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safey — Private Photo Vault &amp; Password Manager for iPhone</title>
+<meta name="description" content="Safey is a private vault app for iPhone: hide photos &amp; videos, store passwords, cards, secure notes and files — all encrypted on your device with AES-256 and locked behind Face ID. Free on the App Store.">
+<link rel="canonical" href="https://safey.app/">
+<meta name="keywords" content="private photo vault, hide photos iphone, password manager app, secret photo album app, app to hide photos and videos, private vault app, secure notes app, Face ID vault, encrypted vault iphone, hide pictures app">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#07BEB8">
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Safey">
+<meta property="og:title" content="Safey — Private Photo Vault &amp; Password Manager for iPhone">
+<meta property="og:description" content="Hide photos &amp; videos and store passwords, cards, notes and files in one encrypted vault, locked with Face ID. Free on the App Store.">
+<meta property="og:url" content="https://safey.app/">
+<meta property="og:image" content="https://safey.app/assets/02_dashboard.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Safey — Private Photo Vault &amp; Password Manager">
+<meta name="twitter:description" content="Passwords, cards, notes, files &amp; hidden photos — encrypted on your iPhone, locked with Face ID.">
+<meta name="twitter:image" content="https://safey.app/assets/02_dashboard.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-itunes-app" content="app-id=1189852939">
+<!-- Google tag (gtag.js) — Safey / SafeSync GA4 property 161462897 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<style>
+  :root { --brand:#07BEB8; --deep:#048A87; --soft:#C4FFF9; --ink:#14201f; --muted:#5c6b6a; --line:#e6eaec; --bg:#f6f8f9; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+  a { color:var(--deep); text-decoration:none; }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 22px; }
+  .hero { background:linear-gradient(135deg,var(--brand),var(--deep)); color:#fff; padding:64px 0 72px; }
+  .hero-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; }
+  .logo { width:60px;height:60px;border-radius:15px;background:rgba(255,255,255,.16);display:inline-flex;align-items:center;justify-content:center;font-size:30px;margin-bottom:18px; }
+  .hero h1 { margin:0 0 14px; font-size:2.6rem; line-height:1.12; letter-spacing:-.02em; }
+  .hero p.lede { margin:0 0 26px; font-size:1.2rem; opacity:.94; max-width:36ch; }
+  .cta { display:inline-flex; align-items:center; gap:10px; background:#fff; color:var(--deep); font-weight:700; padding:14px 22px; border-radius:14px; font-size:1.05rem; box-shadow:0 10px 30px rgba(0,0,0,.18); }
+  .cta .big { font-size:1.05rem; line-height:1.1; }
+  .trust { margin-top:22px; display:flex; gap:18px; flex-wrap:wrap; font-size:.9rem; opacity:.92; }
+  .trust span::before { content:"✓ "; }
+  .phone { justify-self:center; }
+  .phone img { width:250px; border-radius:34px; box-shadow:0 24px 60px rgba(0,0,0,.28); border:1px solid rgba(255,255,255,.25); }
+  section { padding:64px 0; }
+  h2 { font-size:1.9rem; letter-spacing:-.02em; margin:0 0 10px; text-align:center; }
+  .sub { text-align:center; color:var(--muted); max-width:60ch; margin:0 auto 40px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .feature { background:#fff; border:1px solid var(--line); border-radius:18px; padding:26px; }
+  .feature .ico { width:46px;height:46px;border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px; }
+  .feature h3 { margin:0 0 6px; font-size:1.15rem; }
+  .feature p { margin:0; color:var(--muted); font-size:.96rem; }
+  .security { background:linear-gradient(135deg,#0c1112,#161c1e); color:#fff; border-radius:24px; padding:48px; text-align:center; }
+  .security h2 { color:#fff; }
+  .security .sub { color:#9aa8a7; }
+  .shots { display:flex; gap:22px; justify-content:center; flex-wrap:wrap; }
+  .shots img { width:210px; border-radius:24px; box-shadow:0 16px 40px rgba(0,0,0,.14); border:1px solid var(--line); }
+  .prose { max-width:760px; margin:0 auto; }
+  .prose h2 { text-align:left; }
+  .prose p { color:#33403f; }
+  .tiers { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:820px; margin:0 auto; }
+  .tier { background:#fff; border:1px solid var(--line); border-radius:18px; padding:26px; text-align:center; }
+  .tier.pop { border:2px solid var(--brand); }
+  .tier .amt { font-size:1.7rem; font-weight:800; color:var(--deep); }
+  .tier .cap { color:var(--muted); font-size:.9rem; }
+  details { background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 20px; margin-bottom:12px; }
+  details summary { font-weight:650; cursor:pointer; }
+  details p { color:var(--muted); margin:12px 0 0; }
+  .center { text-align:center; }
+  .readmore { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:8px; }
+  .readmore a { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; font-weight:600; }
+  footer { padding:40px 0 60px; text-align:center; color:var(--muted); font-size:.9rem; }
+  footer a { color:var(--muted); margin:0 8px; }
+  @media (max-width:760px){ .hero-grid{grid-template-columns:1fr; text-align:center;} .hero p.lede{margin-inline:auto;} .trust{justify-content:center;} .grid,.tiers{grid-template-columns:1fr;} .hero h1{font-size:2.1rem;} .security{padding:32px 20px;} }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="logo">🔒</div>
+      <h1>Hide photos and lock your secrets in one private vault</h1>
+      <p class="lede">Safey is a private vault for iPhone — hide photos and videos, and keep your passwords, cards, notes and files encrypted on your device and locked behind Face ID.</p>
+      <a class="cta" href="https://apps.apple.com/app/id1189852939" rel="noopener"> Download on the <span class="big">App&nbsp;Store</span></a>
+      <div class="trust"><span>AES-256 encryption</span><span>Face ID lock</span><span>On-device &amp; private</span></div>
+    </div>
+    <div class="phone"><img src="assets/02_dashboard.png" width="250" alt="Safey private vault app home screen showing passwords, cards, secure notes and files"></div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>One private vault for everything you hide</h2>
+    <p class="sub">Most apps hide only photos, or only passwords. Safey is a true vault — it keeps anything you need private in a single, encrypted place.</p>
+    <div class="grid">
+      <div class="feature"><div class="ico">🖼️</div><h3>Hidden photo &amp; video vault</h3><p>Move private photos and videos out of your camera roll into a Face-ID-locked album no one else can open.</p></div>
+      <div class="feature"><div class="ico">🔑</div><h3>Password manager</h3><p>Store every login with a built-in generator that creates strong, unique passwords in one tap.</p></div>
+      <div class="feature"><div class="ico">💳</div><h3>Cards, PINs &amp; CVCs</h3><p>Keep payment cards, PINs and CVCs encrypted and revealed only after a biometric check.</p></div>
+      <div class="feature"><div class="ico">📝</div><h3>Secure notes</h3><p>Private notes for anything sensitive — recovery codes, wifi passwords, passport details.</p></div>
+      <div class="feature"><div class="ico">📄</div><h3>Files &amp; documents</h3><p>Store any file — IDs, certificates, PDFs, contracts — safely inside your vault.</p></div>
+      <div class="feature"><div class="ico">⚡</div><h3>Instant search &amp; restore</h3><p>Find anything in a second, and restore your entire vault on a new iPhone just by signing in.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="security">
+      <h2>Security you can actually trust</h2>
+      <p class="sub">Your secrets are encrypted with <strong>AES-256 on your device</strong> before they’re ever synced — so no one else can read them, not even us. Your vault opens only for you, behind Face ID, Touch ID or your passcode, and auto-locks the moment you leave the app.</p>
+      <div class="shots">
+        <img src="assets/06_lock.png" width="210" alt="Safey Face ID lock screen protecting the private vault" loading="lazy">
+        <img src="assets/03_generator.png" width="210" alt="Safey built-in strong password generator" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap prose">
+    <h2>Why hide photos in a vault instead of the Hidden album?</h2>
+    <p>iPhone’s built-in Hidden album helps tidy your camera roll, but it isn’t real security — the album can be opened by anyone who unlocks your phone, and its contents still sync and appear in some views. Safey is different: private photos and videos are moved into a separate, <strong>encrypted vault that only opens with your face or passcode</strong>. Hand your phone to a friend or a child and your private moments stay private.</p>
+    <p>The same protection covers your passwords, cards, notes and files. Instead of scattering sensitive things across Notes, Photos and a password app, Safey keeps them together in one place that’s locked, encrypted and built to stay yours.</p>
+    <div class="readmore">
+      <a href="/blog/hide-photos-iphone/">How to hide photos on iPhone →</a>
+      <a href="/blog/">More privacy guides →</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Free to start</h2>
+    <p class="sub">Download Safey free. Upgrade for extra storage whenever you need more room for files and photos.</p>
+    <div class="tiers">
+      <div class="tier"><div class="amt">Free</div><div class="cap">Your full vault, Face ID lock &amp; encryption</div></div>
+      <div class="tier pop"><div class="amt">50&nbsp;GB</div><div class="cap">More room for files, cards &amp; private photos</div></div>
+      <div class="tier"><div class="amt">200&nbsp;GB</div><div class="cap">Maximum storage for everything you keep</div></div>
+    </div>
+    <p class="center" style="margin-top:34px"><a class="cta" href="https://apps.apple.com/app/id1189852939" rel="noopener"> Download on the <span class="big">App&nbsp;Store</span></a></p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap" style="max-width:760px">
+    <h2>Frequently asked questions</h2>
+    <details open><summary>How do I hide photos and videos on my iPhone with Safey?</summary><p>Download Safey, open the photo vault, and import the pictures and videos you want to hide. They’re moved into an encrypted, Face-ID-locked album and removed from your main camera roll, so they never appear when someone scrolls your photos.</p></details>
+    <details><summary>Is Safey really private?</summary><p>Yes. Sensitive fields — passwords, card numbers, CVCs, PINs, note contents and your photos — are encrypted with AES-256 on your iPhone before they’re uploaded. The encryption key lives in your device’s Keychain and never leaves it, so no one else can read your data.</p></details>
+    <details><summary>What can I store in Safey?</summary><p>Passwords and logins, payment cards, secure notes, any files or documents (IDs, certificates, PDFs), and private photos and videos in a hidden, Face-ID-locked album.</p></details>
+    <details><summary>What happens if I lose my phone?</summary><p>Your vault is locked behind Face ID, Touch ID or your device passcode — no one can open Safey without it. Your data syncs privately, so you can restore everything on a new iPhone by signing in.</p></details>
+    <details><summary>Is Safey free?</summary><p>Safey is free to download and use. Optional subscriptions add extra cloud storage (50&nbsp;GB or 200&nbsp;GB) for your files and photos.</p></details>
+    <details><summary>Does Safey work as a password manager?</summary><p>Yes — Safey stores your logins and includes a one-tap strong password generator, alongside your cards, notes, files and photos in a single private vault.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Safey — a private vault by <a href="https://khatibdesigns.com">Khatib Designs</a>.</p>
+    <p><a href="https://apps.apple.com/app/id1189852939">App Store</a> · <a href="/blog/">Guides</a> · <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Use</a></p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Safey — Private Photo Vault & Password Manager",
+  "operatingSystem":"iOS",
+  "applicationCategory":"UtilitiesApplication",
+  "description":"A private vault for iPhone: hide photos and videos, and store passwords, cards, secure notes and files, protected by Face ID and AES-256 encryption.",
+  "url":"https://safey.app/",
+  "downloadUrl":"https://apps.apple.com/app/id1189852939",
+  "publisher":{"@type":"Organization","name":"Khatib Designs","url":"https://khatibdesigns.com"},
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How do I hide photos and videos on my iPhone with Safey?","acceptedAnswer":{"@type":"Answer","text":"Open Safey's photo vault and import the pictures and videos you want to hide. They're moved into an encrypted, Face-ID-locked album and removed from your camera roll, so they never appear when someone scrolls your photos."}},
+    {"@type":"Question","name":"Is Safey really private?","acceptedAnswer":{"@type":"Answer","text":"Sensitive fields and photos are encrypted with AES-256 on your iPhone before upload. The key lives in your device Keychain and never leaves it, so no one else can read your data."}},
+    {"@type":"Question","name":"What can I store in Safey?","acceptedAnswer":{"@type":"Answer","text":"Passwords, payment cards, secure notes, any files or documents, and private photos and videos in a hidden Face-ID-locked album."}},
+    {"@type":"Question","name":"What happens if I lose my phone?","acceptedAnswer":{"@type":"Answer","text":"Your vault is locked behind Face ID, Touch ID or your passcode, and syncs privately so you can restore it on a new iPhone by signing in."}},
+    {"@type":"Question","name":"Is Safey free?","acceptedAnswer":{"@type":"Answer","text":"Safey is free to download. Optional subscriptions add extra cloud storage (50 GB or 200 GB)."}}
+  ]
+}
+</script>
+</body>
+</html>
