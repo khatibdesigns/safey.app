@@ -1,0 +1,26 @@
+{
+ "slug": "break-in-alerts-photo-vault",
+ "date": "21 July 2026",
+ "iso": "2026-07-21",
+ "crumb": "Break-in alerts",
+ "title": "How to Know If Someone Tried to Open Your Phone",
+ "meta": "Break-in alerts record every failed passcode attempt and capture a photo of whoever made it. Here's how they work on iPhone and what they can and can't tell you.",
+ "keywords": "know if someone tried to open my phone, failed passcode attempts iphone, break-in alerts, intruder photo app",
+ "cta_title": "Know if someone tried",
+ "cta_sub": "Safey logs every failed attempt on your vault and captures a photo. On by default, and free.",
+ "faq": [
+  [
+   "Does iPhone tell you about failed passcode attempts?",
+   "No. iOS records failed attempts internally and lengthens the lockout, but it does not show you that anyone tried, when, or how many times. You would only notice indirectly, such as the device already being in a lockout."
+  ],
+  [
+   "Can an app take a photo of someone who fails the passcode?",
+   "Yes, if it is that app's own passcode. An app can use the front camera when its own lock screen is failed. No third-party app can do this for the iOS device passcode."
+  ],
+  [
+   "Is capturing a photo of someone legal?",
+   "It is your device and your data, and the capture happens because someone attempted to open something of yours. Rules vary by country, so treat it as a record for yourself rather than something to publish."
+  ]
+ ],
+ "body": "    <p class=\"lead\">Most people who wonder whether someone has been through their phone never find out. There is nothing to check. The phone looks exactly the same afterwards.</p>\n    <p>Break-in alerts change that: every failed attempt on your vault is recorded, with a photo of whoever made it.</p>\n\n    <h2>What your iPhone already knows, and won't tell you</h2>\n    <p>iOS counts failed passcode attempts. That is how escalating lockouts work \u2014 a minute, then five, then an hour. The count exists.</p>\n    <p>You just never see it. There is no log, no notification, no screen listing attempts. The information is used to slow an attacker down, not to inform you. Unless you happen to pick up your phone during a lockout, someone can try your passcode a dozen times and you will never know.</p>\n    <p>For a lost phone that is fine. For the far more common situation \u2014 a phone that never left the house, and someone in it who had a few minutes alone \u2014 it is the wrong design.</p>\n\n    <h2>What a break-in alert records</h2>\n    <p>Apps can't monitor the iOS device passcode. But an app with <em>its own</em> passcode can watch its own lock screen, and that's where the useful signal is: someone who picks up an unlocked phone and hits a vault they didn't expect.</p>\n    <p>When a wrong code is entered, the app records:</p>\n    <ul>\n      <li><strong>A photo</strong> from the front camera, taken at the moment of the failure</li>\n      <li><strong>The time</strong> of the attempt</li>\n      <li><strong>How many</strong> attempts were made</li>\n    </ul>\n    <p>The photo matters more than it sounds. A timestamp tells you something happened at 3:47am. A photo tells you who was holding it \u2014 which is usually the actual question.</p>\n\n    <h2>The point is knowing, not catching</h2>\n    <p>It's tempting to frame this as catching someone. In practice it more often does the opposite, and that is the more valuable outcome.</p>\n    <p>If you have wondered whether a phone has been gone through, the wondering itself is the problem. It doesn't resolve. An empty attempt log after a few weeks is a real answer, and usually a reassuring one.</p>\n    <p>When there is something in the log, you get specifics instead of suspicion: a time, a face, a count. What you do with that is a separate decision, but you are making it with information rather than a feeling.</p>\n\n    <h2>Turning it on</h2>\n    <p>In <a href=\"/\">Safey</a>, break-in alerts are on by default and free. Any failed attempt on your vault passcode is captured, and attempts appear under Settings \u2192 Break-in Attempts with the photo and timestamp.</p>\n    <p>Two things worth checking:</p>\n    <ul>\n      <li><strong>Camera permission.</strong> Without it the attempt is still logged, but with no photo \u2014 which loses most of the value.</li>\n      <li><strong>Your own habits.</strong> Mistyping your own code creates an entry too. A photo of yourself looking puzzled is a normal first log entry.</li>\n    </ul>\n\n    <h2>What it doesn't cover</h2>\n    <p>Break-in alerts watch one door. They record failures against your vault's passcode \u2014 not your iOS device passcode, which no third-party app can monitor, and not someone who already knows your code and simply opens it.</p>\n    <p>That last one is the real limit, and it's why the feature pairs with a <a href=\"/blog/decoy-passcode-iphone/\">decoy passcode</a>. Alerts tell you when someone tried and failed. A decoy code covers the case where they don't have to try at all, because they've asked you to open it.</p>"
+}
