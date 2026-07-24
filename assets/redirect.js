@@ -52,19 +52,34 @@
   var campaign = params.get("utm_campaign") || params.get("utm_source");
   if (campaign) dest += "&ct=" + encodeURIComponent(campaign.slice(0, 40));
 
-  // Fire attribution before leaving. gtag uses sendBeacon, which survives the
-  // unload; the Snap pixel may still be loading, hence the short grace period.
+  // Leave only once GA4 confirms the hit went out.
+  //
+  // A fixed delay does not work here: measured on the live site, gtag.js only
+  // finishes loading at ~342ms and the first hit leaves at ~686ms, so anything
+  // shorter drops the event and undercounts exactly the traffic being paid for.
+  // event_callback is GA4's own "fire, then navigate" hook, and event_timeout
+  // caps the wait when the network is slow. The outer timer is the backstop for
+  // gtag.js never arriving at all (blocked, offline), where no callback comes.
+  var jumped = false;
+  function go() {
+    if (jumped) return;
+    jumped = true;
+    location.replace(dest);
+  }
+
   try {
+    if (typeof snaptr === "function") snaptr("track", "APP_INSTALL");
     if (typeof gtag === "function") {
       gtag("event", "ad_redirect_to_store", {
         page_path: location.pathname,
         utm_source: params.get("utm_source") || "",
         utm_campaign: campaign || "",
-        transport_type: "beacon"
+        transport_type: "beacon",
+        event_callback: go,
+        event_timeout: 1200
       });
     }
-    if (typeof snaptr === "function") snaptr("track", "APP_INSTALL");
   } catch (e) {}
 
-  setTimeout(function () { location.replace(dest); }, 250);
+  setTimeout(go, 1500);
 })();
