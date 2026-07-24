@@ -45,6 +45,12 @@ async function pingGA4(request, url, env) {
     const m = cookie.match(/_ga=GA\d\.\d\.(\d+\.\d+)/);
     const clientId = m ? m[1] : crypto.randomUUID();
     const p = url.searchParams;
+    // GA4's built-in Device Category can't see server-side events, so classify
+    // the device here from the User-Agent and send it as our own dimension.
+    const uaStr = request.headers.get("user-agent") || "";
+    const device = /iPad|Android(?!.*Mobile)|Tablet/i.test(uaStr) ? "tablet"
+      : /iPhone|iPod|Android.*Mobile|Mobi/i.test(uaStr) ? "mobile"
+      : "desktop";
     const body = JSON.stringify({
       client_id: clientId,
       events: [{
@@ -55,6 +61,7 @@ async function pingGA4(request, url, env) {
           source: p.get("utm_source") || "",
           medium: p.get("utm_medium") || "",
           campaign: p.get("utm_campaign") || "",
+          device,
           session_id: Date.now().toString(),
           engagement_time_msec: 1,
         },
@@ -62,6 +69,15 @@ async function pingGA4(request, url, env) {
     });
     const endpoint =
       `https://www.google-analytics.com/mp/collect?measurement_id=${env.GA4_MEASUREMENT_ID}&api_secret=${env.GA4_API_SECRET}`;
-    await fetch(endpoint, { method: "POST", body });
+    // Forward the visitor's real User-Agent so GA4 attributes device/OS to the
+    // actual phone, not to this Worker (otherwise every redirect reads desktop).
+    await fetch(endpoint, {
+      method: "POST",
+      body,
+      headers: {
+        "User-Agent": request.headers.get("user-agent") || "",
+        "X-Forwarded-For": request.headers.get("cf-connecting-ip") || "",
+      },
+    });
   } catch (e) { /* never throws into the response path */ }
 }
