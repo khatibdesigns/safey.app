@@ -14,6 +14,11 @@
  * Fail-open: any unexpected error falls through to the origin, so the site can
  * never be taken down by this Worker.
  */
+// Master switch. Set to false to serve the real site to everyone (no App Store
+// bounce) — done 2026-07-25 so paid clicks land on safey.app and GA4 can measure
+// them. Flip back to true to restore the "any param -> App Store" redirect.
+const REDIRECT_ENABLED = false;
+
 const APP_STORE = "https://apps.apple.com/app/id1189852939";
 const CRAWLER = /bot|crawler|spider|Googlebot|AdsBot|facebookexternalhit|Applebot|mediapartners|lighthouse|headless/i;
 
@@ -26,7 +31,7 @@ export default {
       const isStay = url.search.includes("stay=1");     // escape hatch
       const isCrawler = CRAWLER.test(ua);
 
-      if (hasParams && !isStay && !isCrawler) {
+      if (REDIRECT_ENABLED && hasParams && !isStay && !isCrawler) {
         ctx.waitUntil(pingGA4(request, url, env));       // background, non-blocking
         return Response.redirect(APP_STORE, 302);
       }
