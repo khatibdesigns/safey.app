@@ -1,0 +1,30 @@
+{
+  "slug": "app-lock-iphone",
+  "date": "29 Jul 2026",
+  "iso": "2026-07-29",
+  "crumb": "App Lock for iPhone",
+  "title": "App Lock for iPhone: How to Lock Apps (and What It Can't Protect)",
+  "meta": "How to lock apps on iPhone with Face ID, what the built-in app lock can't protect, and how to keep private photos, passwords, and notes truly secure.",
+  "keywords": "app lock, app lock iphone, lock apps on iphone, how to lock apps iphone, face id app lock, private vault iphone",
+  "cta_title": "Keep the private things actually private.",
+  "cta_sub": "Safey is an encrypted vault for your photos, passwords, and notes — with a decoy passcode and break-in alerts.",
+  "faq": [
+    [
+      "Can you lock apps on iPhone without a third-party app?",
+      "Yes. On iOS 18 and later, touch and hold any app icon and tap Require Face ID. The app then asks for Face ID, Touch ID, or your passcode every time it opens — no extra app needed for the basic lock."
+    ],
+    [
+      "Does the iPhone app lock work if someone knows my passcode?",
+      "No. The Face ID app lock can always be approved with your device passcode as a fallback, so anyone who knows your passcode can open a locked app. To protect content from someone who has your passcode, keep it in an encrypted vault like Safey instead."
+    ],
+    [
+      "How do I lock WhatsApp or Photos on iPhone?",
+      "Touch and hold the WhatsApp or Photos icon and choose Require Face ID. For photos you want truly private, move them into an encrypted vault so they stay protected even if the app itself is opened."
+    ],
+    [
+      "What is the most secure way to lock private photos on iPhone?",
+      "Move them into an encrypted vault app. Unlike the built-in app lock, a vault like Safey encrypts the photos on your device and adds a decoy passcode and break-in alerts, so they stay protected even if someone knows your iPhone passcode."
+    ]
+  ],
+  "body": "    <p class=\"lead\">You can lock apps on iPhone. Since iOS 18, any app can be locked behind Face ID, Touch ID, or your passcode — with no extra app required. But an app lock and a vault are not the same thing, and the difference matters the moment someone actually has your phone in their hand.</p>\n\n    <h2>How to lock an app on iPhone (built-in)</h2>\n    <p>On iOS 18 and later, the app lock is built into the system:</p>\n    <ol>\n      <li>Touch and hold the app's icon on the Home Screen.</li>\n      <li>Tap <strong>Require Face ID</strong> (or Touch ID / Passcode).</li>\n      <li>Confirm. The app now asks for Face ID every time it is opened.</li>\n    </ol>\n    <p>You can also tap <strong>Hide and Require Face ID</strong> to move the app into a locked Hidden folder at the bottom of your App Library, so it no longer shows on the Home Screen or in search.</p>\n\n    <h2>What the built-in app lock does — and doesn't — protect</h2>\n    <p>The Face ID app lock is genuinely useful for everyday privacy: handing your phone to a friend, a child, or a stranger to show one photo without them wandering into WhatsApp or your banking app. For that, it is enough.</p>\n    <p>But it has three limits worth understanding before you rely on it for anything sensitive:</p>\n    <ul>\n      <li><strong>Your passcode is the master key.</strong> The Face ID prompt can always be approved with your device passcode. Anyone who knows — or watches you type — your iPhone passcode can open a locked app.</li>\n      <li><strong>It locks the door, not the contents.</strong> The app's data still lives in ordinary form on the device. A locked app is not an encrypted app.</li>\n      <li><strong>There is no decoy and no record.</strong> If you are pressured to unlock, there is no second, empty version to show — and no way to know afterward that someone tried.</li>\n    </ul>\n\n    <h2>Lock the app, or protect what's inside it?</h2>\n    <p>For most apps, the built-in lock is the right tool. The problem is the small set of things you would never want seen at all — private photos, ID scans, passwords, personal notes. Those do not need a locked app; they need to be somewhere your phone's passcode alone cannot open.</p>\n    <p>That is what a vault is for. Instead of trusting each app's own lock, you move the sensitive items into one encrypted place and lock that.</p>\n\n    <h2>How Safey handles it</h2>\n    <p>Safey is an encrypted vault for exactly those items. What goes inside is encrypted on your device, so it is not readable just because someone got past your iPhone passcode. It adds the two things the system lock cannot:</p>\n    <ul>\n      <li>A <a href=\"/blog/decoy-passcode-iphone/\">decoy passcode</a> that opens a separate, empty vault — for the moment when refusing to unlock is not an option.</li>\n      <li><a href=\"/blog/break-in-alerts-photo-vault/\">Break-in alerts</a> that silently capture a photo of anyone who fails your vault code, so you know if someone tried.</li>\n    </ul>\n    <p>The workflow is simple: lock ordinary apps with Face ID for everyday privacy, and move the genuinely private material into Safey. See also our guides to <a href=\"/blog/hide-apps-on-iphone/\">hiding apps on iPhone</a> and the <a href=\"/blog/best-photo-vault-apps-iphone/\">best photo vault apps for iPhone</a>.</p>\n"
+}
