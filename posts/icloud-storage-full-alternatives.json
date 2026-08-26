@@ -1,0 +1,30 @@
+{
+  "slug": "icloud-storage-full-alternatives",
+  "date": "25 Aug 2026",
+  "iso": "2026-08-25",
+  "crumb": "iCloud Storage Full",
+  "title": "iCloud Storage Full? How to Free Up Space Without Paying for More",
+  "meta": "iCloud storage full? Free up space without upgrading — clean up backups, large files, and photos, and keep your private photos in an encrypted vault instead of iCloud.",
+  "keywords": "icloud storage full, icloud full, free up icloud storage, icloud storage alternatives, iphone storage full, manage icloud storage",
+  "cta_title": "Keep your private photos out of iCloud entirely.",
+  "cta_sub": "Safey stores sensitive photos and files in an encrypted vault on your device — so they never count against iCloud, and only you can open them.",
+  "faq": [
+    [
+      "Why is my iCloud storage always full?",
+      "The free tier is only 5 GB, and it's shared by device backups, iCloud Photos, iCloud Drive, and Mail. Backups and your photo library usually fill it fastest. Settings → [your name] → iCloud → Manage Account Storage shows exactly what's using it."
+    ],
+    [
+      "How do I free up iCloud storage without paying?",
+      "Delete old device backups you no longer need, turn off iCloud backup for large apps, clear big email attachments, and move photos you don't need synced out of iCloud Photos. For private photos, keep them in an on-device encrypted vault so they never use iCloud at all."
+    ],
+    [
+      "Can I store photos privately without using iCloud?",
+      "Yes. An encrypted vault app like Safey stores photos and videos on your device, encrypted, without uploading them to iCloud — so they don't count against your quota and aren't readable by anyone but you."
+    ],
+    [
+      "Does deleting photos from my iPhone free up iCloud?",
+      "If iCloud Photos is on, deleting a photo on your iPhone also removes it from iCloud (and vice-versa). To keep a photo but free iCloud, move it into a vault or local storage first, then remove it from the iCloud-synced library."
+    ]
+  ],
+  "body": "    <p class=\"lead\">The \"iCloud Storage Full\" banner is Apple's most persistent nudge to pay. You usually don't have to. Here's how to reclaim iCloud space without upgrading — and how to keep your private photos out of iCloud altogether.</p>\n\n    <h2>First, see what's filling it</h2>\n    <p>Open <strong>Settings → [your name] → iCloud → Manage Account Storage</strong>. The free plan is just <strong>5 GB</strong>, shared across device Backups, Photos, iCloud Drive, and Mail. Backups and your photo library are almost always the two biggest culprits.</p>\n\n    <h2>Free up iCloud without paying</h2>\n    <ul>\n      <li><strong>Delete old backups</strong> — Manage Account Storage → Backups. Old devices you no longer use can hold gigabytes.</li>\n      <li><strong>Trim what gets backed up</strong> — turn off iCloud backup for large apps that don't need it (games, streaming apps that re-download anyway).</li>\n      <li><strong>Clear iCloud Mail</strong> — large attachments in Mail count against iCloud; delete the heaviest.</li>\n      <li><strong>Prune iCloud Photos</strong> — remove screenshots, duplicates, and videos you don't need synced across devices.</li>\n      <li><strong>Empty \"Recently Deleted\"</strong> — deleted photos linger for 30 days and still count.</li>\n    </ul>\n\n    <h2>The better fix for private photos: don't put them in iCloud at all</h2>\n    <p>Every private photo you keep in iCloud Photos is a photo Apple stores on its servers and that syncs to every device on your account. For sensitive images, that's more exposure than you need — and more of your quota used.</p>\n    <p>Instead, move those into a <strong>private, on-device vault</strong>. <a href=\"/\">Safey</a> stores photos, videos, and files <a href=\"/blog/password-protect-photos-iphone/\">encrypted on your device</a>, locked behind Face ID — so they <em>don't use iCloud</em>, don't sync to other devices, and can't be read by anyone but you. It's a smaller iCloud bill and stronger privacy at the same time. See also: <a href=\"/blog/is-the-hidden-album-really-hidden/\">is the Hidden album really hidden?</a> and <a href=\"/blog/best-photo-vault-apps-iphone/\">the best photo vault apps for iPhone</a>.</p>\n"
+}

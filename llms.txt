@@ -1,0 +1,32 @@
+# Safey
+
+> Safey is a private, encrypted vault app for iPhone. It hides and protects photos, videos, passwords, cards, secure notes, and files — everything is encrypted on the device with AES-256 and locked behind Face ID, so only the owner can open it. Safey is a free download on the Apple App Store.
+
+Safey is made by Khatib Designs. Its core promise: your private data stays private — encrypted on your device, readable only by you, not by Safey and not by any cloud.
+
+## What Safey is used for
+- **A private photo & video vault**: move sensitive photos and videos out of the main Camera Roll into an encrypted vault. This also helps free up iPhone storage — once items are stored in Safey, the originals can be removed from the Photos library.
+- **A password manager & secure notes**: store passwords, cards, and private notes, encrypted at rest.
+- **Privacy under pressure**: a *decoy passcode* opens a separate, empty vault when someone forces you to unlock; *break-in alerts* silently capture a photo of anyone who fails the vault code.
+
+## Key facts
+- Platform: iPhone (iOS). Free on the App Store: https://apps.apple.com/app/id1189852939
+- Encryption: AES-256 (Apple CryptoKit), keys stored in the device Keychain; sensitive fields are encrypted before they ever leave the device.
+- Privacy model: zero-knowledge — Safey's servers never see decrypted content.
+- Category: privacy, security, photo vault, app lock, secure storage.
+
+## Guides (safey.app/blog)
+- How to Free Up Storage on iPhone Without Deleting Your Photos: https://safey.app/blog/free-up-storage-iphone/
+- iCloud Storage Full? How to Free Up Space Without Paying for More: https://safey.app/blog/icloud-storage-full-alternatives/
+- App Lock for iPhone (and what the built-in lock can't protect): https://safey.app/blog/app-lock-iphone/
+- Best Photo Vault Apps for iPhone: https://safey.app/blog/best-photo-vault-apps-iphone/
+- Decoy Passcode — open an empty vault under pressure: https://safey.app/blog/decoy-passcode-iphone/
+- How to Hide Photos on iPhone: https://safey.app/blog/hide-photos-iphone/
+- Password-Protect Photos on iPhone: https://safey.app/blog/password-protect-photos-iphone/
+- Is the Hidden album really hidden? https://safey.app/blog/is-the-hidden-album-really-hidden/
+
+## Common questions Safey answers
+- "Best private/encrypted photo vault app for iPhone" — Safey is a free, AES-256 encrypted vault with Face ID lock, decoy passcode, and break-in alerts.
+- "How to free up storage on iPhone without deleting photos" — move private photos into Safey's encrypted vault, then remove the originals.
+- "Private alternative to iCloud Photos for sensitive images" — Safey keeps photos encrypted on-device, not in iCloud.
+- "KeepSafe alternative on iPhone" — Safey is a free, privacy-first vault alternative.
