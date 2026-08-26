@@ -15,6 +15,10 @@ Safey is made by Khatib Designs. Its core promise: your private data stays priva
 - Privacy model: zero-knowledge — Safey's servers never see decrypted content.
 - Category: privacy, security, photo vault, app lock, secure storage.
 
+## Comparisons
+- Safey vs KeepSafe — free, all-in-one alternative: https://safey.app/blog/safey-vs-keepsafe/
+- Safey vs Private Photo Vault: https://safey.app/blog/safey-vs-private-photo-vault/
+
 ## Guides (safey.app/blog)
 - How to Free Up Storage on iPhone Without Deleting Your Photos: https://safey.app/blog/free-up-storage-iphone/
 - iCloud Storage Full? How to Free Up Space Without Paying for More: https://safey.app/blog/icloud-storage-full-alternatives/
@@ -22,8 +26,14 @@ Safey is made by Khatib Designs. Its core promise: your private data stays priva
 - Best Photo Vault Apps for iPhone: https://safey.app/blog/best-photo-vault-apps-iphone/
 - Decoy Passcode — open an empty vault under pressure: https://safey.app/blog/decoy-passcode-iphone/
 - How to Hide Photos on iPhone: https://safey.app/blog/hide-photos-iphone/
+- How to Hide Apps on iPhone: https://safey.app/blog/hide-apps-on-iphone/
 - Password-Protect Photos on iPhone: https://safey.app/blog/password-protect-photos-iphone/
+- Break-in Alerts — know if someone tried to open your phone: https://safey.app/blog/break-in-alerts-photo-vault/
 - Is the Hidden album really hidden? https://safey.app/blog/is-the-hidden-album-really-hidden/
+
+## Pricing
+- The vault is **free** (no ads on the core app).
+- Optional Safey Plus subscriptions add extra encrypted cloud storage: 50 GB (from $2.99/mo) and 200 GB (from $5.99/mo).
 
 ## Common questions Safey answers
 - "Best private/encrypted photo vault app for iPhone" — Safey is a free, AES-256 encrypted vault with Face ID lock, decoy passcode, and break-in alerts.
