@@ -13,6 +13,20 @@ import json, re, pathlib
 ROOT = pathlib.Path(__file__).parent
 BASE = (ROOT / "index.html").read_text()
 STORE = "https://apps.apple.com/app/id1189852939"
+PLAY = "https://play.google.com/store/apps/details?id=com.khatibdesigns.safey"
+# Google Play badge wording per language ("Get it on").
+PLAY_SMALL = {"es": "Disponible en", "pt": "Disponível no", "fr": "Disponible sur", "de": "Jetzt bei",
+              "it": "Disponibile su", "tr": "Hemen indir:", "id": "Dapatkan di"}
+# Android shipped 2026-11-25; every language answers "is it on Android?" on the page and in FAQPage.
+ANDROID_FAQ = {
+    "es": ("¿Safey está disponible para Android?", "Sí. Safey es gratis en Google Play para teléfonos Android, con la misma bóveda, el código señuelo y las alertas de intrusos que en iPhone."),
+    "pt": ("O Safey está disponível para Android?", "Sim. O Safey é grátis no Google Play para celulares Android, com o mesmo cofre, o código de disfarce e os alertas de invasão do iPhone."),
+    "fr": ("Safey est-il disponible sur Android ?", "Oui. Safey est gratuit sur Google Play pour les téléphones Android, avec le même coffre, le code leurre et les alertes d'intrusion que sur iPhone."),
+    "de": ("Gibt es Safey auch für Android?", "Ja. Safey ist kostenlos bei Google Play für Android-Smartphones, mit demselben Tresor, dem Tarn-Code und den Einbruchswarnungen wie auf dem iPhone."),
+    "it": ("Safey è disponibile per Android?", "Sì. Safey è gratis su Google Play per i telefoni Android, con la stessa cassaforte, il codice esca e gli avvisi di intrusione che trovi su iPhone."),
+    "tr": ("Safey Android'de var mı?", "Evet. Safey, Android telefonlar için Google Play'de ücretsiz; iPhone'daki aynı kasa, sahte şifre ve izinsiz giriş uyarılarıyla."),
+    "id": ("Apakah Safey tersedia di Android?", "Ya. Safey gratis di Google Play untuk ponsel Android, dengan brankas, kode samaran, dan peringatan pembobolan yang sama seperti di iPhone."),
+}
 
 # Every language the site serves, for hreflang + the footer switcher.
 ALL = {"en": ("/", "English"), "ar": ("/ar/", "العربية"), "es": ("/es/", "Español"),
@@ -43,7 +57,7 @@ T = {
   desc="Safey es una bóveda privada para iPhone: oculta fotos y videos tras Face ID y guarda contraseñas, tarjetas y notas cifradas en tu dispositivo con AES-256.",
   keywords="ocultar fotos iphone, bóveda de fotos, app para ocultar fotos, álbum secreto, gestor de contraseñas, app privada, bloquear fotos iphone",
   nav_small="Gratis en", cta_small="Descárgala en", how_btn="Cómo funciona",
-  eyebrow="iOS · Face ID · AES-256", h1=("La bóveda para todo lo que prefieres ", "mantener oculto", "."),
+  eyebrow="iOS · Android · Face ID · AES-256", h1=("La bóveda para todo lo que prefieres ", "mantener oculto", "."),
   lede="Saca tus fotos y videos privados del carrete y guarda contraseñas, tarjetas, notas y archivos en un solo lugar que solo se abre con tu cara.",
   chips=["Contraseñas cifradas", "Bloqueo con Face ID", "Se bloquea al instante"],
   alts=["Pantalla principal de la bóveda de Safey", "Generador de contraseñas seguras de Safey", "Pantalla de bloqueo de Safey con Face ID"],
@@ -84,7 +98,7 @@ T = {
   desc="Safey é um cofre privado para iPhone: esconda fotos e vídeos com Face ID e guarde senhas, cartões e notas criptografados no aparelho com AES-256.",
   keywords="esconder fotos iphone, cofre de fotos, app para esconder fotos, álbum secreto, gerenciador de senhas, app privado, trancar fotos iphone",
   nav_small="Grátis na", cta_small="Baixe na", how_btn="Como funciona",
-  eyebrow="iOS · Face ID · AES-256", h1=("O cofre para tudo o que você prefere ", "manter escondido", "."),
+  eyebrow="iOS · Android · Face ID · AES-256", h1=("O cofre para tudo o que você prefere ", "manter escondido", "."),
   lede="Tire suas fotos e vídeos privados do rolo da câmera e guarde senhas, cartões, notas e arquivos em um só lugar que só abre com o seu rosto.",
   chips=["Senhas criptografadas", "Bloqueio com Face ID", "Tranca na hora"],
   alts=["Tela inicial do cofre Safey", "Gerador de senhas fortes do Safey", "Tela de bloqueio do Safey com Face ID"],
@@ -125,7 +139,7 @@ T = {
   desc="Safey est un coffre-fort privé pour iPhone : cachez photos et vidéos derrière Face ID et gardez mots de passe, cartes et notes chiffrés sur l'appareil en AES-256.",
   keywords="cacher photos iphone, coffre-fort photo, application pour cacher des photos, album secret, gestionnaire de mots de passe, app privée",
   nav_small="Gratuit sur", cta_small="Télécharger dans", how_btn="Voir comment ça marche",
-  eyebrow="iOS · Face ID · AES-256", h1=("Le coffre-fort pour tout ce que vous préférez ", "garder caché", "."),
+  eyebrow="iOS · Android · Face ID · AES-256", h1=("Le coffre-fort pour tout ce que vous préférez ", "garder caché", "."),
   lede="Sortez vos photos et vidéos privées de la pellicule et gardez mots de passe, cartes, notes et fichiers au même endroit, qui ne s'ouvre qu'avec votre visage.",
   chips=["Mots de passe chiffrés", "Verrou Face ID", "Verrouillage instantané"],
   alts=["Écran d'accueil du coffre Safey", "Générateur de mots de passe forts de Safey", "Écran de verrouillage Face ID de Safey"],
@@ -166,7 +180,7 @@ T = {
   desc="Safey ist ein privater Tresor fürs iPhone: Verstecke Fotos und Videos hinter Face ID und speichere Passwörter, Karten und Notizen mit AES-256 verschlüsselt.",
   keywords="fotos verstecken iphone, foto tresor app, app zum fotos verstecken, geheimes album, passwort manager, private app, fotos sperren iphone",
   nav_small="Gratis im", cta_small="Laden im", how_btn="So funktioniert's",
-  eyebrow="iOS · Face ID · AES-256", h1=("Der Tresor für alles, was du lieber ", "verborgen hältst", "."),
+  eyebrow="iOS · Android · Face ID · AES-256", h1=("Der Tresor für alles, was du lieber ", "verborgen hältst", "."),
   lede="Hol private Fotos und Videos aus deiner Mediathek und bewahre Passwörter, Karten, Notizen und Dateien an einem Ort auf, der sich nur mit deinem Gesicht öffnet.",
   chips=["Verschlüsselte Passwörter", "Face-ID-Sperre", "Sperrt sofort"],
   alts=["Startbildschirm des Safey-Tresors", "Passwort-Generator von Safey", "Face-ID-Sperrbildschirm von Safey"],
@@ -207,7 +221,7 @@ T = {
   desc="Safey è una cassaforte privata per iPhone: nascondi foto e video dietro Face ID e conserva password, carte e note cifrate sul dispositivo con AES-256.",
   keywords="nascondere foto iphone, cassaforte foto, app per nascondere foto, album segreto, gestore password, app privata, bloccare foto iphone",
   nav_small="Gratis su", cta_small="Scarica su", how_btn="Come funziona",
-  eyebrow="iOS · Face ID · AES-256", h1=("La cassaforte per tutto ciò che preferisci ", "tenere nascosto", "."),
+  eyebrow="iOS · Android · Face ID · AES-256", h1=("La cassaforte per tutto ciò che preferisci ", "tenere nascosto", "."),
   lede="Togli foto e video privati dal rullino e tieni password, carte, note e file in un unico posto che si apre solo con il tuo volto.",
   chips=["Password cifrate", "Blocco con Face ID", "Si blocca all'istante"],
   alts=["Schermata principale della cassaforte Safey", "Generatore di password sicure di Safey", "Schermata di blocco Face ID di Safey"],
@@ -248,7 +262,7 @@ T = {
   desc="Safey, iPhone için özel bir kasa: fotoğraf ve videoları Face ID arkasına gizle, şifre, kart ve notları cihazda AES-256 ile şifreli sakla.",
   keywords="iphone fotoğraf gizleme, fotoğraf kasası, gizli albüm uygulaması, şifre yöneticisi, gizli kasa, fotoğraf kilitleme",
   nav_small="Ücretsiz", cta_small="İndir", how_btn="Nasıl çalışır",
-  eyebrow="iOS · Face ID · AES-256", h1=("", "Gizli kalsın", " istediğin her şeyin kasası."),
+  eyebrow="iOS · Android · Face ID · AES-256", h1=("", "Gizli kalsın", " istediğin her şeyin kasası."),
   lede="Özel fotoğraf ve videolarını film rulosundan çıkar; şifreleri, kartları, notları ve dosyaları yalnızca yüzünle açılan tek bir yerde sakla.",
   chips=["Şifreli şifreler", "Face ID kilidi", "Anında kilitlenir"],
   alts=["Safey kasa ana ekranı", "Safey güçlü şifre oluşturucu", "Safey Face ID kilit ekranı"],
@@ -289,7 +303,7 @@ T = {
   desc="Safey adalah brankas privat untuk iPhone: sembunyikan foto dan video di balik Face ID, simpan kata sandi, kartu, dan catatan terenkripsi AES-256 di perangkat.",
   keywords="sembunyikan foto iphone, brankas foto, aplikasi penyembunyi foto, album rahasia, pengelola kata sandi, aplikasi privat, kunci foto iphone",
   nav_small="Gratis di", cta_small="Unduh di", how_btn="Cara kerjanya",
-  eyebrow="iOS · Face ID · AES-256", h1=("Brankas untuk semua yang ingin ", "tetap tersembunyi", "."),
+  eyebrow="iOS · Android · Face ID · AES-256", h1=("Brankas untuk semua yang ingin ", "tetap tersembunyi", "."),
   lede="Pindahkan foto dan video pribadi dari rol kamera, lalu simpan kata sandi, kartu, catatan, dan file di satu tempat yang hanya terbuka dengan wajahmu.",
   chips=["Kata sandi terenkripsi", "Kunci Face ID", "Terkunci seketika"],
   alts=["Layar utama brankas Safey", "Pembuat kata sandi kuat Safey", "Layar kunci Face ID Safey"],
@@ -347,11 +361,12 @@ def hreflang_block():
     return "\n".join(lines)
 
 
-def store_btn(small):
-    return f'<a class="btn btn-primary" href="{STORE}" rel="noopener"><span><small>{small}</small><span class="big">App&nbsp;Store</span></span></a>'
+def store_btn(small, lang):
+    return (f'<a class="btn btn-primary" href="{STORE}" rel="noopener"><span><small>{small}</small><span class="big">App&nbsp;Store</span></span></a>\n'
+            f'          <a class="btn btn-primary" href="{PLAY}" rel="noopener"><span><small>{esc(PLAY_SMALL[lang])}</small><span class="big">Google&nbsp;Play</span></span></a>')
 
 
-def main_html(t):
+def main_html(t, lang):
     chips = "\n          ".join(f'<span class="chip">{i} {esc(c)}</span>' for i, c in zip(CHIP_ICONS, t["chips"]))
     imgs = "\n              ".join(f'<img src="/assets/{f}" alt="{esc(a)}" width="292" height="610">'
                                    for f, a in zip(["02_dashboard.png", "03_generator.png", "06_lock.png"], t["alts"]))
@@ -363,7 +378,7 @@ def main_html(t):
         f'<div class="tier{" pop" if n == 1 else ""}"><span class="tag">{esc(tag)}</span><div class="amt">{esc(amt)}</div><div class="per">{esc(per)}</div><p class="cap">{esc(cap)}</p><span class="pill">{esc(pill)}</span></div>'
         for n, (tag, amt, per, cap, pill) in enumerate(t["tiers"]))
     faqs = "\n      ".join(f'<details{" open" if n == 0 else ""}><summary>{esc(q)} <span class="plus"></span></summary><div class="body">{esc(a)}</div></details>'
-                           for n, (q, a) in enumerate(t["faqs"]))
+                           for n, (q, a) in enumerate(t["faqs"] + [ANDROID_FAQ[lang]]))
     guides = "\n        ".join(f'<a href="{u}" lang="en" style="display:block;padding:16px 18px;border:1px solid var(--line,#1f3d40);border-radius:12px;color:inherit;text-decoration:none">{esc(x)}</a>' for u, x in GUIDES)
     h1a, h1b, h1c = t["h1"]
     return f"""<main>
@@ -375,7 +390,7 @@ def main_html(t):
         <h1 class="load d2">{esc(h1a)}<span class="accent">{esc(h1b)}</span>{esc(h1c)}</h1>
         <p class="lede load d3">{esc(t["lede"])}</p>
         <div class="cta-row load d4">
-          {store_btn(esc(t["cta_small"]))}
+          {store_btn(esc(t["cta_small"]), lang)}
           <a class="btn btn-ghost" href="#how">{esc(t["how_btn"])}</a>
         </div>
         <div class="badges load d4">
@@ -488,7 +503,7 @@ def main_html(t):
     <div class="wrap"><div class="final-card reveal">
       <h2>{esc(t["final_h2"])}</h2>
       <p>{esc(t["final_p"])}</p>
-      <div class="cta-row">{store_btn(esc(t["cta_small"]))}</div>
+      <div class="cta-row">{store_btn(esc(t["cta_small"]), lang)}</div>
     </div></div>
   </section>
 </main>"""
@@ -504,6 +519,7 @@ def footer(t, lang):
     <div>© 2026 Safey — {esc(t["foot_by"])} <a href="https://khatibdesigns.com" style="color:var(--ink-2)">Khatib Designs</a>.</div>
     <div class="foot-links">
       <a href="{STORE}">App Store</a>
+      <a href="{PLAY}">Google Play</a>
       <a href="/blog/">{esc(t["foot_guides"])}</a>
       <a href="/privacy/">{esc(t["foot_privacy"])}</a>
       <a href="/terms/">{esc(t["foot_terms"])}</a>
@@ -517,12 +533,12 @@ def footer(t, lang):
 
 def schema(t, lang):
     app = {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Safey",
-           "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "inLanguage": lang,
-           "description": t["desc"], "url": f"https://safey.app/{lang}/", "downloadUrl": STORE,
+           "operatingSystem": "iOS, Android", "applicationCategory": "UtilitiesApplication", "inLanguage": lang,
+           "description": t["desc"], "url": f"https://safey.app/{lang}/", "downloadUrl": [STORE, PLAY],
            "publisher": {"@type": "Organization", "name": "Khatib Designs", "url": "https://khatibdesigns.com"},
            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}
     faq = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": lang,
-           "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in t["faqs"]]}
+           "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in t["faqs"] + [ANDROID_FAQ[lang]]]}
     return (f'<script type="application/ld+json">\n{json.dumps(app, ensure_ascii=False)}\n</script>\n'
             f'<script type="application/ld+json">\n{json.dumps(faq, ensure_ascii=False)}\n</script>')
 
@@ -550,7 +566,7 @@ def build(lang, t):
     s = sub(r'<a class="lang" href="/ar/">العربية</a>', '<a class="lang" href="/">English</a>', s)
     s = sub(r"<small>Free on the</small>", f"<small>{esc(t['nav_small'])}</small>", s)
     s = sub(r'<a class="brand" href="/">', f'<a class="brand" href="/{lang}/">', s)
-    s = sub(r"<main>.*?</main>", main_html(t), s)
+    s = sub(r"<main>.*?</main>", main_html(t, lang), s)
     s = sub(r"<footer>.*?</footer>", footer(t, lang), s)
     s = sub(r'(<script type="application/ld\+json">.*?</script>\s*){2}', schema(t, lang) + "\n\n", s)
     s = sub(r"var caps = \[.*?\];", "var caps = " + json.dumps(t["caps"], ensure_ascii=False) + ";", s)

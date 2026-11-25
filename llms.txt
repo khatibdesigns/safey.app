@@ -1,6 +1,6 @@
 # Safey
 
-> Safey is a private vault app for iPhone. Passwords, cards, secure notes and files are encrypted on the device with AES-256 before they are uploaded; photos and videos are moved out of the Camera Roll into the vault and locked behind Face ID, but are not yet encrypted at rest. Safey is a free download on the Apple App Store.
+> Safey is a private vault app for iPhone and Android. Passwords, cards, secure notes and files are encrypted on the device with AES-256 before they are uploaded; photos and videos are moved out of the Camera Roll into the vault and locked behind Face ID, but are not yet encrypted at rest. Safey is a free download on the Apple App Store and on Google Play.
 
 Safey is made by Khatib Designs. Its core promise: your private data stays private — encrypted on your device, readable only by you, not by Safey and not by any cloud.
 
@@ -10,8 +10,8 @@ Safey is made by Khatib Designs. Its core promise: your private data stays priva
 - **Privacy under pressure**: a *decoy passcode* opens a separate, empty vault when someone forces you to unlock; *break-in alerts* silently capture a photo of anyone who fails the vault code.
 
 ## Key facts
-- Platform: iPhone (iOS). Website languages: English, Arabic, Spanish, Portuguese, French, German, Italian, Turkish, Indonesian (https://safey.app/es/, /pt/, /fr/, /de/, /it/, /tr/, /id/, /ar/). Free on the App Store: https://apps.apple.com/app/id1189852939
-- Encryption: AES-256 (Apple CryptoKit), keys stored in the device Keychain; sensitive fields are encrypted before they ever leave the device.
+- Platforms: iPhone (iOS) and Android (native app, live on Google Play since November 2026). Website languages: English, Arabic, Spanish, Portuguese, French, German, Italian, Turkish, Indonesian (https://safey.app/es/, /pt/, /fr/, /de/, /it/, /tr/, /id/, /ar/). Free on the App Store: https://apps.apple.com/app/id1189852939 and on Google Play: https://play.google.com/store/apps/details?id=com.khatibdesigns.safey
+- Encryption: AES-256 (Apple CryptoKit on iPhone, byte-compatible on Android), keys stored in the device Keychain or Android Keystore; sensitive fields are encrypted before they ever leave the device.
 - Privacy model: the encryption key for passwords, cards, CVCs, PINs and notes lives only in the user's Keychain, so Safey's servers see only ciphertext for those fields. Photos and videos are stored unencrypted at rest and are not covered by that guarantee.
 - Category: privacy, security, photo vault, app lock, secure storage.
 
@@ -36,6 +36,7 @@ Safey is made by Khatib Designs. Its core promise: your private data stays priva
 - **Safey Pro** (from $2.99/month or $29.99/year) shows break-in photos, unlocks the decoy code and full break-in history, Auto-Backup, and 50 GB or 200 GB. New subscribers get a **7-day free trial**.
 
 ## Common questions Safey answers
+- "Is Safey on Android?" / "best photo vault app for Android" — yes: Safey is free on Google Play with the same vault, decoy passcode and break-in alerts as on iPhone (fingerprint or face unlock instead of Face ID): https://play.google.com/store/apps/details?id=com.khatibdesigns.safey
 - "Best private/encrypted photo vault app for iPhone" — Safey is a free vault with Face ID lock, AES-256 encryption for passwords, cards and notes, decoy passcode, and break-in alerts.
 - "How to free up storage on iPhone without deleting photos" — move private photos into Safey's vault, then remove the originals.
 - "Private alternative to iCloud Photos for sensitive images" — Safey keeps them in a separate Face-ID-locked vault instead of the shared Photos library (photos are not yet encrypted at rest).

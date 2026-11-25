@@ -70,6 +70,7 @@ snaptr('track','PAGE_VIEW');
   <div class="cta">
     <p><strong>{cta_title}</strong><br>{cta_sub}</p>
     <a class="btn" href="https://apps.apple.com/app/id1189852939">حمّل Safey — مجانًا على App Store</a>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.khatibdesigns.safey">أو من Google Play لأندرويد</a>
   </div>
 
   <div class="faq">
@@ -83,6 +84,7 @@ snaptr('track','PAGE_VIEW');
   <div class="foot-links"><a href="/ar/">الرئيسية</a><a href="/ar/blog/">الأدلّة</a><a href="/">English</a><a href="/ar/privacy/">الخصوصية</a><a href="/ar/terms/">الشروط</a></div>
 </div></footer>
 <script src="/assets/track.js" defer></script>
+<script>/* Android visitors: the header button goes to Google Play. *//Android/i.test(navigator.userAgent)&&document.querySelectorAll('.nav-cta,.btn-app').forEach(function(a){{a.href='https://play.google.com/store/apps/details?id=com.khatibdesigns.safey';var b=a.querySelector('.big,b');if(b)b.innerHTML='Google&nbsp;Play'}})</script>
 </body>
 </html>
 """
