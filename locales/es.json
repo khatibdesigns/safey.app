@@ -1,0 +1,185 @@
+{
+  "title": "Safey: libera espacio en tu teléfono con una bóveda privada de fotos y contraseñas",
+  "desc": "Libera espacio en tu teléfono sin perder ni un recuerdo. Mueve tus fotos y videos a Safey, una bóveda privada que solo se abre con tu cara, con contraseñas, tarjetas y notas cifradas con AES-256.",
+  "keywords": "liberar espacio iphone, bóveda privada de fotos, ocultar fotos iphone, gestor de contraseñas, álbum secreto de fotos, app para ocultar fotos y videos, app de bóveda privada, notas seguras, bóveda con Face ID",
+  "og_locale": "es_ES",
+  "nav_how": "Cómo funciona",
+  "nav_pricing": "Precios",
+  "nav_guides": "Guías",
+  "nav_cta": "Descarga Safey gratis",
+  "h1_before": "Esa barra amarilla son tus ",
+  "h1_mark": "fotos.",
+  "h1_after": "",
+  "lede": "Muévelas a Safey, bórralas del carrete y tu teléfono recupera el espacio. Se quedan en una bóveda privada que solo se abre con tu cara.",
+  "store_small": "Descárgala en",
+  "play_small": "Disponible en",
+  "how_link": "Cómo funciona",
+  "panel_label": "Ejemplo de almacenamiento del teléfono",
+  "device_iphone": "iPhone",
+  "device_phone": "Tu teléfono",
+  "used_before": "61,8 GB de 64 GB usados",
+  "used_after": "37,5 GB de 64 GB usados",
+  "saved": "24,3 GB libres en tu teléfono",
+  "legend": [
+    "Fotos",
+    "Apps",
+    "Mensajes",
+    "Sistema",
+    "Otros"
+  ],
+  "toggle_title": "Mover fotos y videos a Safey",
+  "toggle_sub": "Bloqueados con Face ID y luego borrados de Fotos",
+  "secline": [
+    "<b>Face ID</b> para abrir",
+    "<b>AES-256</b> para contraseñas, tarjetas y notas",
+    "<b>500 MB</b> gratis, 50 GB desde $2.99"
+  ],
+  "example_note": "Cifras de ejemplo. Lo que recuperes depende de cuántas fotos muevas.",
+  "steps_kick": "Cómo funciona",
+  "steps_h2": "Tres pasos para un teléfono más ligero.",
+  "steps": [
+    [
+      "Importa a Safey",
+      "Elige las fotos y videos que quieres conservar. Pasan a tu bóveda, bloqueadas con Face ID."
+    ],
+    [
+      "Bórralas de Fotos",
+      "Quítalas del carrete y vacía Eliminados recientemente para que el espacio vuelva."
+    ],
+    [
+      "Conserva cada recuerdo",
+      "Ábrelas en Safey cuando quieras. Tu teléfono mantiene espacio para las nuevas."
+    ]
+  ],
+  "steps_fine": "El plan gratis guarda 500 MB. Para un carrete completo, Safey Pro guarda 50 GB y Max guarda 200 GB.",
+  "see_plans": "Ver planes",
+  "vault_kick": "Una sola bóveda",
+  "vault_h2": "No solo fotos.",
+  "vault_p": "El mismo bloqueo protege el resto de tu vida privada en un solo lugar.",
+  "vault_rows": [
+    [
+      "Fotos y videos",
+      "Fuera del carrete, en un álbum con Face ID"
+    ],
+    [
+      "Contraseñas y accesos",
+      "Con generador de contraseñas fuertes en un toque"
+    ],
+    [
+      "Tarjetas, PIN y CVC",
+      "Se muestran solo tras verificar con Face ID"
+    ],
+    [
+      "Notas seguras",
+      "Códigos de recuperación, claves wifi, datos del pasaporte"
+    ],
+    [
+      "Archivos y documentos",
+      "Identificaciones, certificados, contratos y PDF"
+    ]
+  ],
+  "dashboard_alt": "Pantalla principal de la bóveda de Safey con fotos, contraseñas, tarjetas, notas y archivos",
+  "priv_kick": "Y es privado",
+  "priv_h2": "Solo tu cara lo abre.",
+  "priv_p": "Las contraseñas, tarjetas y notas se cifran con AES-256 en tu teléfono antes de sincronizarse. La clave se queda en el llavero de tu dispositivo, así que nadie más puede leerlas. Ni un atacante, ni nosotros.",
+  "priv_honest": "Las fotos y videos quedan bloqueados con Face ID en tu bóveda. Todavía no están cifrados en reposo, y preferimos decírtelo a que lo des por hecho.",
+  "priv_rows": [
+    [
+      "Bloqueo",
+      "",
+      "Face ID"
+    ],
+    [
+      "Contraseñas, tarjetas, notas",
+      "",
+      "AES-256"
+    ],
+    [
+      "Clave de cifrado",
+      "",
+      "En tu dispositivo"
+    ],
+    [
+      "Bloqueo automático",
+      "",
+      "Al instante"
+    ],
+    [
+      "Fotos de intrusos",
+      "Mira quién intentó abrir tu bóveda",
+      "PRO"
+    ],
+    [
+      "Código señuelo",
+      "Abre una bóveda vacía bajo presión",
+      "PRO"
+    ]
+  ],
+  "price_kick": "Precios",
+  "price_h2": "Elige tu tamaño.",
+  "price_p": "Empieza gratis. Pasa a más espacio cuando tu carrete lo pida. Pro y Max empiezan con 7 días gratis.",
+  "tiers": [
+    [
+      "GRATIS",
+      "500 MB",
+      "gratis para siempre",
+      "La bóveda completa: fotos y videos tras Face ID, más contraseñas, tarjetas, notas y archivos.",
+      "Sin tarjeta"
+    ],
+    [
+      "PRO · EL MÁS POPULAR",
+      "50 GB",
+      "desde $2.99/mes",
+      "Espacio para un carrete de verdad, más fotos de intrusos y un código señuelo.",
+      "7 días gratis"
+    ],
+    [
+      "MAX",
+      "200 GB",
+      "desde $5.99/mes",
+      "Todo lo de Pro, con espacio para años de fotos y videos familiares.",
+      "7 días gratis"
+    ]
+  ],
+  "faq_kick": "Bueno saberlo",
+  "faq_h2": "Tus preguntas, respondidas.",
+  "faqs": [
+    [
+      "¿Safey puede liberar espacio en mi teléfono?",
+      "Sí. Mueve fotos y videos a la bóveda de Safey, quítalos de tu biblioteca de Fotos y vacía Eliminados recientemente. Los recuerdos siguen a salvo y en privado en la bóveda, y el espacio que ocupaban en tu carrete queda libre. El plan gratis guarda 500 MB; Pro (50 GB) y Max (200 GB) guardan mucho más."
+    ],
+    [
+      "¿Cómo oculto fotos y videos?",
+      "Abre la bóveda de fotos de Safey e importa las fotos y videos que quieras ocultar. Pasan a un álbum bloqueado con Face ID y se quitan de tu carrete, así que nunca aparecen cuando alguien revisa tus fotos."
+    ],
+    [
+      "¿Safey es realmente privado?",
+      "Las contraseñas, números de tarjeta, CVC, PIN y el contenido de las notas se cifran con AES-256 en tu teléfono antes de subirse. La clave vive en el llavero de tu dispositivo y nunca sale de él, así que nuestros servidores solo ven texto cifrado. Las fotos y videos salen de tu carrete a tu bóveda y quedan bloqueados con Face ID, pero todavía no están cifrados en reposo. Preferimos decírtelo a dar a entender otra cosa."
+    ],
+    [
+      "¿Qué puedo guardar en Safey?",
+      "Contraseñas y accesos, tarjetas de pago, notas seguras, cualquier archivo o documento (identificaciones, certificados, PDF) y fotos y videos privados en un álbum oculto y bloqueado con Face ID."
+    ],
+    [
+      "¿Qué pasa si pierdo mi teléfono?",
+      "Tu bóveda está bloqueada con Face ID, Touch ID o el código de tu dispositivo, así que nadie puede abrir Safey sin ellos. Tus datos se sincronizan de forma privada, así que puedes restaurar todo en un teléfono nuevo iniciando sesión."
+    ],
+    [
+      "¿Safey es gratis?",
+      "Safey es gratis para descargar y usar con 500 MB. Safey Pro es opcional: empieza con 7 días de prueba gratis y luego se renueva al precio que ves en la app, salvo que canceles."
+    ],
+    [
+      "¿Safey está disponible para Android?",
+      "Sí. Safey es gratis en Google Play para teléfonos Android, con la misma bóveda, el código señuelo y las alertas de intrusión que en iPhone."
+    ]
+  ],
+  "guides_kick": "Guías",
+  "guides_h2": "Almacenamiento y privacidad, explicados.",
+  "all_guides": "Todas las guías",
+  "final_h2": "Recupera tu espacio.",
+  "final_p": "Conserva cada recuerdo, libera tu teléfono y bloquéalo todo con tu cara. Gratis para empezar.",
+  "foot_by": "una bóveda privada de",
+  "foot_guides": "Guías",
+  "foot_privacy": "Privacidad",
+  "foot_terms": "Términos"
+}

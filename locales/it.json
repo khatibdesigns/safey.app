@@ -1,0 +1,185 @@
+{
+  "title": "Safey — Libera spazio sul telefono con una cassaforte privata per foto e password",
+  "desc": "Libera spazio sul telefono senza perdere nemmeno un ricordo. Sposta foto e video in Safey, una cassaforte privata che si apre solo con il tuo volto, con password, carte e note cifrate con AES-256.",
+  "keywords": "liberare spazio iphone, cassaforte foto privata, nascondere foto iphone, gestore password, album segreto foto, app per nascondere foto e video, app cassaforte privata, note sicure, cassaforte Face ID",
+  "og_locale": "it_IT",
+  "nav_how": "Come funziona",
+  "nav_pricing": "Prezzi",
+  "nav_guides": "Guide",
+  "nav_cta": "Scarica Safey gratis",
+  "h1_before": "Quella barra gialla sono le tue ",
+  "h1_mark": "foto.",
+  "h1_after": "",
+  "lede": "Spostale in Safey, eliminale dal rullino e il tuo telefono riprende fiato. Restano in una cassaforte privata che si apre solo con il tuo volto.",
+  "store_small": "Scarica su",
+  "play_small": "Disponibile su",
+  "how_link": "Come funziona",
+  "panel_label": "Esempio di spazio sul telefono",
+  "device_iphone": "iPhone",
+  "device_phone": "Il tuo telefono",
+  "used_before": "61,8 GB usati su 64 GB",
+  "used_after": "37,5 GB usati su 64 GB",
+  "saved": "24,3 GB tornati liberi sul telefono",
+  "legend": [
+    "Foto",
+    "App",
+    "Messaggi",
+    "Sistema",
+    "Altro"
+  ],
+  "toggle_title": "Sposta foto e video in Safey",
+  "toggle_sub": "Bloccati con Face ID, poi eliminati da Foto",
+  "secline": [
+    "<b>Face ID</b> per aprire",
+    "<b>AES-256</b> per password, carte e note",
+    "<b>500 MB</b> gratis, 50 GB da 2,99 $"
+  ],
+  "example_note": "Numeri di esempio. Lo spazio che recuperi dipende da quante foto sposti.",
+  "steps_kick": "Come funziona",
+  "steps_h2": "Tre passi per un telefono più leggero.",
+  "steps": [
+    [
+      "Importa in Safey",
+      "Scegli le foto e i video che vuoi conservare. Finiscono nella tua cassaforte, bloccati con Face ID."
+    ],
+    [
+      "Elimina da Foto",
+      "Toglili dal rullino, poi svuota Eliminati di recente così lo spazio torna libero."
+    ],
+    [
+      "Tieni ogni ricordo",
+      "Aprili in Safey quando vuoi. Il telefono ha di nuovo posto per quelli nuovi."
+    ]
+  ],
+  "steps_fine": "Il piano gratuito contiene 500 MB. Per un rullino pieno, Safey Pro arriva a 50 GB e Max a 200 GB.",
+  "see_plans": "Vedi i piani",
+  "vault_kick": "Una sola cassaforte",
+  "vault_h2": "Non solo foto.",
+  "vault_p": "Lo stesso blocco protegge anche il resto della tua vita privata, tutto in un posto.",
+  "vault_rows": [
+    [
+      "Foto e video",
+      "Fuori dal rullino, in un album protetto da Face ID"
+    ],
+    [
+      "Password e accessi",
+      "Con un generatore di password sicure a un tocco"
+    ],
+    [
+      "Carte, PIN e CVC",
+      "Visibili solo dopo il controllo con Face ID"
+    ],
+    [
+      "Note sicure",
+      "Codici di recupero, password wifi, dati del passaporto"
+    ],
+    [
+      "File e documenti",
+      "Documenti d'identità, certificati, contratti e PDF"
+    ]
+  ],
+  "dashboard_alt": "Schermata principale della cassaforte Safey con foto, password, carte, note e file",
+  "priv_kick": "E resta privato",
+  "priv_h2": "Solo il tuo volto la apre.",
+  "priv_p": "Password, carte e note vengono cifrate con AES-256 sul tuo telefono prima di sincronizzarsi. La chiave resta nel Portachiavi del dispositivo, quindi nessun altro può leggerle. Né un malintenzionato né noi.",
+  "priv_honest": "Foto e video sono bloccati dietro Face ID nella tua cassaforte. Non sono ancora cifrati a riposo, e preferiamo dirtelo piuttosto che lasciartelo supporre.",
+  "priv_rows": [
+    [
+      "Blocco",
+      "",
+      "Face ID"
+    ],
+    [
+      "Password, carte, note",
+      "",
+      "AES-256"
+    ],
+    [
+      "Chiave di cifratura",
+      "",
+      "Sul tuo dispositivo"
+    ],
+    [
+      "Blocco automatico",
+      "",
+      "Immediato"
+    ],
+    [
+      "Foto degli intrusi",
+      "Guarda chi ha provato ad aprire la tua cassaforte",
+      "PRO"
+    ],
+    [
+      "Codice esca",
+      "Apre una cassaforte vuota se sei costretto",
+      "PRO"
+    ]
+  ],
+  "price_kick": "Prezzi",
+  "price_h2": "Scegli la tua misura.",
+  "price_p": "Inizia gratis. Passa a di più quando cresce il tuo rullino. Pro e Max partono con 7 giorni gratis.",
+  "tiers": [
+    [
+      "GRATIS",
+      "500 MB",
+      "gratis per sempre",
+      "La cassaforte completa: foto e video dietro Face ID, più password, carte, note e file.",
+      "Nessuna carta richiesta"
+    ],
+    [
+      "PRO · IL PIÙ SCELTO",
+      "50 GB",
+      "da 2,99 $/mese",
+      "Spazio per un vero rullino, più foto degli intrusi e codice esca.",
+      "7 giorni gratis"
+    ],
+    [
+      "MAX",
+      "200 GB",
+      "da 5,99 $/mese",
+      "Tutto di Pro, con spazio per anni di foto e video di famiglia.",
+      "7 giorni gratis"
+    ]
+  ],
+  "faq_kick": "Da sapere",
+  "faq_h2": "Domande e risposte.",
+  "faqs": [
+    [
+      "Safey può liberare spazio sul mio telefono?",
+      "Sì. Sposta foto e video nella cassaforte di Safey, poi eliminali dalla libreria Foto e svuota Eliminati di recente. I ricordi restano al sicuro e privati nella cassaforte, mentre lo spazio che occupavano sul rullino torna libero. Il piano gratuito contiene 500 MB; Pro (50 GB) e Max (200 GB) ne contengono molto di più."
+    ],
+    [
+      "Come nascondo foto e video?",
+      "Apri la cassaforte foto di Safey e importa le immagini e i video che vuoi nascondere. Vengono spostati in un album bloccato con Face ID e tolti dal rullino, così non compaiono mai quando qualcuno scorre le tue foto."
+    ],
+    [
+      "Safey è davvero privato?",
+      "Password, numeri di carta, CVC, PIN e contenuto delle note vengono cifrati con AES-256 sul tuo telefono prima del caricamento. La chiave vive nel Portachiavi del dispositivo e non lo lascia mai, quindi i nostri server vedono solo testo cifrato. Foto e video vengono spostati fuori dal rullino nella tua cassaforte e bloccati dietro Face ID, ma non sono ancora cifrati a riposo. Preferiamo dirlo chiaramente piuttosto che lasciarlo intendere."
+    ],
+    [
+      "Cosa posso conservare in Safey?",
+      "Password e accessi, carte di pagamento, note sicure, qualsiasi file o documento (documenti d'identità, certificati, PDF) e foto e video privati in un album nascosto e bloccato con Face ID."
+    ],
+    [
+      "Cosa succede se perdo il telefono?",
+      "La cassaforte è protetta da Face ID, Touch ID o dal codice del dispositivo, quindi nessuno può aprire Safey senza. I tuoi dati si sincronizzano in privato e puoi ripristinare tutto su un nuovo telefono accedendo."
+    ],
+    [
+      "Safey è gratis?",
+      "Safey è gratis da scaricare e usare con 500 MB. Safey Pro è facoltativo: parte con 7 giorni di prova gratuita, poi si rinnova al prezzo indicato nell'app, salvo disdetta."
+    ],
+    [
+      "Safey è disponibile per Android?",
+      "Sì. Safey è gratis su Google Play per i telefoni Android, con la stessa cassaforte, il codice esca e gli avvisi di intrusione che trovi su iPhone."
+    ]
+  ],
+  "guides_kick": "Guide",
+  "guides_h2": "Spazio e privacy, spiegati.",
+  "all_guides": "Tutte le guide",
+  "final_h2": "Riprenditi il tuo spazio.",
+  "final_p": "Tieni ogni ricordo, libera il telefono e blocca tutto dietro il tuo volto. Si parte gratis.",
+  "foot_by": "una cassaforte privata di",
+  "foot_guides": "Guide",
+  "foot_privacy": "Privacy",
+  "foot_terms": "Termini"
+}

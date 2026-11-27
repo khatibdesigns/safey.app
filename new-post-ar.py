@@ -32,9 +32,6 @@ TEMPLATE = """<!doctype html>
 <meta name="twitter:image" content="https://safey.app/assets/02_dashboard.png">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JGCT9MDZK"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-1JGCT9MDZK');</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">{article_schema}</script>

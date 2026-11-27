@@ -1,0 +1,185 @@
+{
+  "title": "Safey: Telefonunda yer aç, fotoğraf ve şifreler için gizli kasa",
+  "desc": "Anıdan vazgeçmeden telefonunda yer aç. Fotoğraf ve videolarını yalnızca yüzünle açılan gizli bir kasaya taşı. Şifre, kart ve notların AES-256 ile şifrelenir.",
+  "keywords": "iphone depolama alanı açma, fotoğraf kasası, iphone fotoğraf gizleme, şifre yöneticisi, gizli fotoğraf albümü, fotoğraf ve video gizleme uygulaması, gizli kasa uygulaması, güvenli notlar, Face ID kasa",
+  "og_locale": "tr_TR",
+  "nav_how": "Nasıl çalışır",
+  "nav_pricing": "Fiyatlar",
+  "nav_guides": "Rehberler",
+  "nav_cta": "Safey'i ücretsiz indir",
+  "h1_before": "O sarı çubuk senin ",
+  "h1_mark": "fotoğrafların.",
+  "h1_after": "",
+  "lede": "Onları Safey'e taşı, film rulosundan sil, telefonun yerini geri alsın. Fotoğrafların yalnızca yüzünle açılan gizli bir kasada kalır.",
+  "store_small": "İndir",
+  "play_small": "Hemen indir:",
+  "how_link": "Nasıl çalışır",
+  "panel_label": "Telefon depolama örneği",
+  "device_iphone": "iPhone",
+  "device_phone": "Telefonun",
+  "used_before": "64 GB'ın 61,8 GB'ı dolu",
+  "used_after": "64 GB'ın 37,5 GB'ı dolu",
+  "saved": "telefonunda 24,3 GB yer açıldı",
+  "legend": [
+    "Fotoğraflar",
+    "Uygulamalar",
+    "Mesajlar",
+    "Sistem",
+    "Diğer"
+  ],
+  "toggle_title": "Fotoğraf ve videoları Safey'e taşı",
+  "toggle_sub": "Face ID ile kilitlenir, sonra Fotoğraflar'dan silinir",
+  "secline": [
+    "Açmak için <b>Face ID</b>",
+    "Şifre, kart ve notlar için <b>AES-256</b>",
+    "<b>500 MB</b> ücretsiz, 50 GB aylık 2,99 $'dan"
+  ],
+  "example_note": "Örnek rakamlardır. Geri kazandığın alan, taşıdığın fotoğraf sayısına göre değişir.",
+  "steps_kick": "Nasıl çalışır",
+  "steps_h2": "Daha hafif bir telefon için üç adım.",
+  "steps": [
+    [
+      "Safey'e aktar",
+      "Saklamak istediğin fotoğraf ve videoları seç. Face ID arkasında kilitli kasana taşınırlar."
+    ],
+    [
+      "Fotoğraflar'dan sil",
+      "Onları film rulosundan kaldır, sonra Yakında Silinenler'i boşalt. Böylece yer geri gelir."
+    ],
+    [
+      "Her anıyı sakla",
+      "İstediğin zaman Safey'de aç. Telefonun yeni anılar için yer tutar."
+    ]
+  ],
+  "steps_fine": "Ücretsiz plan 500 MB alan sunar. Dolu bir film rulosu için Safey Pro 50 GB, Max 200 GB sunar.",
+  "see_plans": "Planları gör",
+  "vault_kick": "Tek kasa",
+  "vault_h2": "Sadece fotoğraflar değil.",
+  "vault_p": "Aynı kilit, özel hayatının geri kalanını da tek yerde tutar.",
+  "vault_rows": [
+    [
+      "Fotoğraf ve videolar",
+      "Film rulosundan çıkar, Face ID'li albüme girer"
+    ],
+    [
+      "Şifreler ve girişler",
+      "Tek dokunuşla güçlü şifre oluşturucuyla"
+    ],
+    [
+      "Kartlar, PIN ve CVC'ler",
+      "Yalnızca Face ID doğrulamasından sonra görünür"
+    ],
+    [
+      "Güvenli notlar",
+      "Kurtarma kodları, Wi-Fi şifreleri, pasaport bilgileri"
+    ],
+    [
+      "Dosyalar ve belgeler",
+      "Kimlikler, sertifikalar, sözleşmeler ve PDF'ler"
+    ]
+  ],
+  "dashboard_alt": "Safey kasa ana ekranı: fotoğraflar, şifreler, kartlar, notlar ve dosyalar",
+  "priv_kick": "Ve gizli",
+  "priv_h2": "Yalnızca yüzün açar.",
+  "priv_p": "Şifreler, kartlar ve notlar senkronize edilmeden önce telefonunda AES-256 ile şifrelenir. Anahtar cihazının Anahtar Zinciri'nde kalır. Kimse okuyamaz. Ne bir saldırgan ne de biz.",
+  "priv_honest": "Fotoğraf ve videolar kasanda Face ID arkasında kilitlidir. Henüz bekleme durumunda şifrelenmiyor. Sen varsaymadan önce bunu açıkça söylemeyi tercih ederiz.",
+  "priv_rows": [
+    [
+      "Kilit",
+      "",
+      "Face ID"
+    ],
+    [
+      "Şifreler, kartlar, notlar",
+      "",
+      "AES-256"
+    ],
+    [
+      "Şifreleme anahtarı",
+      "",
+      "Cihazında"
+    ],
+    [
+      "Otomatik kilit",
+      "",
+      "Anında"
+    ],
+    [
+      "İzinsiz giriş fotoğrafları",
+      "Kasanı açmaya çalışanı gör",
+      "PRO"
+    ],
+    [
+      "Sahte şifre",
+      "Baskı altında boş bir kasa açar",
+      "PRO"
+    ]
+  ],
+  "price_kick": "Fiyatlar",
+  "price_h2": "Boyutunu seç.",
+  "price_p": "Ücretsiz başla. Film rulon büyüyünce sen de büyü. Pro ve Max 7 gün ücretsiz başlar.",
+  "tiers": [
+    [
+      "ÜCRETSİZ",
+      "500 MB",
+      "her zaman ücretsiz",
+      "Tam kasa: Face ID arkasında fotoğraf ve videolar, ayrıca şifreler, kartlar, notlar ve dosyalar.",
+      "Kart gerekmez"
+    ],
+    [
+      "PRO · EN POPÜLER",
+      "50 GB",
+      "aylık 2,99 $'dan",
+      "Gerçek bir film rulosuna yetecek alan, ayrıca izinsiz giriş fotoğrafları ve sahte şifre.",
+      "7 gün ücretsiz"
+    ],
+    [
+      "MAX",
+      "200 GB",
+      "aylık 5,99 $'dan",
+      "Pro'nun her şeyi, yıllarca aile fotoğrafı ve videosuna yetecek alanla.",
+      "7 gün ücretsiz"
+    ]
+  ],
+  "faq_kick": "Bilmekte fayda var",
+  "faq_h2": "Merak edilenler.",
+  "faqs": [
+    [
+      "Safey telefonumda yer açabilir mi?",
+      "Evet. Fotoğraf ve videoları Safey'in kasasına taşı, sonra Fotoğraflar kitaplığından kaldır ve Yakında Silinenler'i boşalt. Anıların kasada güvenli ve gizli kalır, film rulosunda kapladıkları yer boşalır. Ücretsiz plan 500 MB alan sunar. Pro (50 GB) ve Max (200 GB) çok daha fazlasını sunar."
+    ],
+    [
+      "Fotoğraf ve videoları nasıl gizlerim?",
+      "Safey'in fotoğraf kasasını aç ve gizlemek istediğin fotoğraf ve videoları aktar. Face ID ile kilitli bir albüme taşınır ve film rulosundan kaldırılırlar. Biri fotoğraflarında gezinirken hiç görünmezler."
+    ],
+    [
+      "Safey gerçekten gizli mi?",
+      "Şifreler, kart numaraları, CVC'ler, PIN'ler ve not içerikleri yüklenmeden önce telefonunda AES-256 ile şifrelenir. Anahtar cihazının Anahtar Zinciri'nde durur ve oradan hiç çıkmaz. Bu yüzden sunucularımız yalnızca şifreli veriyi görür. Fotoğraf ve videolar film rulosundan kasana taşınır ve Face ID arkasında kilitlenir, ancak henüz bekleme durumunda şifrelenmez. Aksini ima etmektense bunu açıkça söylemeyi tercih ederiz."
+    ],
+    [
+      "Safey'de neleri saklayabilirim?",
+      "Şifreler ve girişler, ödeme kartları, güvenli notlar, her türlü dosya ve belge (kimlikler, sertifikalar, PDF'ler) ile Face ID ile kilitli gizli bir albümde özel fotoğraf ve videolar."
+    ],
+    [
+      "Telefonumu kaybedersem ne olur?",
+      "Kasan Face ID, Touch ID veya cihaz kodunla kilitlidir. Bunlar olmadan kimse Safey'i açamaz. Verilerin gizli şekilde senkronize edilir. Yeni bir telefonda giriş yaparak her şeyi geri yükleyebilirsin."
+    ],
+    [
+      "Safey ücretsiz mi?",
+      "Safey'i indirmek ve 500 MB ile kullanmak ücretsizdir. Safey Pro isteğe bağlıdır. 7 günlük ücretsiz denemeyle başlar, sonra iptal etmezsen uygulamada gösterilen fiyattan yenilenir."
+    ],
+    [
+      "Safey Android'de var mı?",
+      "Evet. Safey, Android telefonlar için Google Play'de ücretsiz. iPhone'daki aynı kasa, sahte şifre ve izinsiz giriş uyarılarıyla."
+    ]
+  ],
+  "guides_kick": "Rehberler",
+  "guides_h2": "Depolama ve gizlilik, anlaşılır anlatım.",
+  "all_guides": "Tüm rehberler",
+  "final_h2": "Yerini geri al.",
+  "final_p": "Her anıyı sakla, telefonunda yer aç ve hepsini yüzünün arkasına kilitle. Başlamak ücretsiz.",
+  "foot_by": "özel bir kasa:",
+  "foot_guides": "Rehberler",
+  "foot_privacy": "Gizlilik",
+  "foot_terms": "Koşullar"
+}
