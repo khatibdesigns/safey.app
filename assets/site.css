@@ -63,7 +63,8 @@ nav{position:sticky;top:0;z-index:50;background:rgba(242,242,247,.82);backdrop-f
 .post .date{font-size:.82rem;color:var(--mute)}
 
 /* CTA box */
-.cta{background:var(--card);border-radius:var(--radius);padding:28px 26px;margin:32px 0;text-align:center;border-top:6px solid var(--photos)}
+.cta{background:var(--card);border-radius:var(--radius);padding:28px 26px;margin:32px 0;text-align:center}
+.cta::before{content:"";display:block;width:56px;height:8px;border-radius:4px;background:var(--photos);margin:0 auto 18px}
 .cta p{margin:0 0 16px;color:var(--ink);font-weight:600}
 .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:1rem;color:#fff;background:var(--vault);border-radius:999px;padding:13px 22px;transition:background .2s}
 .btn:hover{background:var(--vault-ink);color:#fff;text-decoration:none}
