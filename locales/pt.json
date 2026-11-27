@@ -20,17 +20,36 @@
   "used_before": "61,8 GB de 64 GB usados",
   "used_after": "37,5 GB de 64 GB usados",
   "saved": "24,3 GB de volta no seu celular",
-  "legend": ["Fotos", "Apps", "Mensagens", "Sistema", "Outros"],
+  "legend": [
+    "Fotos",
+    "Apps",
+    "Mensagens",
+    "Sistema",
+    "Outros"
+  ],
   "toggle_title": "Levar fotos e vídeos para o Safey",
   "toggle_sub": "Trancados com Face ID e depois apagados das Fotos",
-  "secline": ["<b>Face ID</b> para abrir", "<b>AES-256</b> para senhas, cartões e notas", "<b>500 MB</b> grátis, 50 GB a partir de US$2,99"],
+  "secline": [
+    "<b>Face ID</b> para abrir",
+    "<b>AES-256</b> para senhas, cartões e notas",
+    "<b>500 MB</b> grátis, 50 GB a partir de US$2,99"
+  ],
   "example_note": "Números de exemplo. O espaço que você recupera depende de quantas fotos levar.",
   "steps_kick": "Como funciona",
   "steps_h2": "Três passos para um celular mais leve.",
   "steps": [
-    ["Importe para o Safey", "Escolha as fotos e vídeos que quer guardar. Eles vão para o seu cofre, trancado com Face ID."],
-    ["Apague das Fotos", "Remova do rolo da câmera e esvazie a pasta Apagados Recentemente para o espaço voltar."],
-    ["Guarde cada lembrança", "Abra no Safey quando quiser. Seu celular fica com espaço para as próximas."]
+    [
+      "Importe para o Safey",
+      "Escolha as fotos e vídeos que quer guardar. Eles vão para o seu cofre, trancado com Face ID."
+    ],
+    [
+      "Apague das Fotos",
+      "Remova do rolo da câmera e esvazie a pasta Apagados Recentemente para o espaço voltar."
+    ],
+    [
+      "Guarde cada lembrança",
+      "Abra no Safey quando quiser. Seu celular fica com espaço para as próximas."
+    ]
   ],
   "steps_fine": "O plano grátis guarda 500 MB. Para um rolo da câmera cheio, o Safey Pro guarda 50 GB e o Max guarda 200 GB.",
   "see_plans": "Ver planos",
@@ -38,43 +57,120 @@
   "vault_h2": "Não é só foto.",
   "vault_p": "O mesmo bloqueio protege o resto da sua vida privada em um só lugar.",
   "vault_rows": [
-    ["Fotos e vídeos", "Fora do rolo da câmera, em um álbum com Face ID"],
-    ["Senhas e logins", "Com gerador de senhas fortes em um toque"],
-    ["Cartões, PINs e CVCs", "Só aparecem depois de verificar o Face ID"],
-    ["Notas seguras", "Códigos de recuperação, senhas de Wi-Fi, dados do passaporte"],
-    ["Arquivos e documentos", "Documentos de identidade, certificados, contratos e PDFs"]
+    [
+      "Fotos e vídeos",
+      "Fora do rolo da câmera, em um álbum com Face ID"
+    ],
+    [
+      "Senhas e logins",
+      "Com gerador de senhas fortes em um toque"
+    ],
+    [
+      "Cartões, PINs e CVCs",
+      "Só aparecem depois de verificar o Face ID"
+    ],
+    [
+      "Notas seguras",
+      "Códigos de recuperação, senhas de Wi-Fi, dados do passaporte"
+    ],
+    [
+      "Arquivos e documentos",
+      "Documentos de identidade, certificados, contratos e PDFs"
+    ]
   ],
   "dashboard_alt": "Tela inicial do cofre Safey com fotos, senhas, cartões, notas e arquivos",
   "priv_kick": "E é privado",
   "priv_h2": "Só o seu rosto abre.",
   "priv_p": "Senhas, cartões e notas são criptografados com AES-256 no seu celular antes de sincronizar. A chave fica nas Chaves do aparelho, então ninguém mais consegue ler. Nem um invasor, nem nós.",
-  "priv_honest": "Fotos e vídeos ficam trancados atrás do Face ID no seu cofre. Eles ainda não são criptografados em repouso, e preferimos dizer isso a deixar você supor outra coisa.",
   "priv_rows": [
-    ["Bloqueio", "", "Face ID"],
-    ["Senhas, cartões, notas", "", "AES-256"],
-    ["Chave de criptografia", "", "No seu aparelho"],
-    ["Bloqueio automático", "", "Imediato"],
-    ["Alertas de invasão", "Veja quem tentou abrir o seu cofre", "PRO"],
-    ["Código isca", "Abre um cofre vazio se alguém te obrigar", "PRO"]
+    [
+      "Bloqueio",
+      "",
+      "Face ID"
+    ],
+    [
+      "Senhas, cartões, notas",
+      "",
+      "AES-256"
+    ],
+    [
+      "Chave de criptografia",
+      "",
+      "No seu aparelho"
+    ],
+    [
+      "Bloqueio automático",
+      "",
+      "Imediato"
+    ],
+    [
+      "Alertas de invasão",
+      "Veja quem tentou abrir o seu cofre",
+      "PRO"
+    ],
+    [
+      "Código isca",
+      "Abre um cofre vazio se alguém te obrigar",
+      "PRO"
+    ]
   ],
   "price_kick": "Preços",
   "price_h2": "Escolha o seu tamanho.",
   "price_p": "Comece grátis. Aumente quando o seu rolo da câmera pedir. Pro e Max começam com 7 dias grátis.",
   "tiers": [
-    ["GRÁTIS", "500 MB", "grátis para sempre", "O cofre completo: fotos e vídeos com Face ID, além de senhas, cartões, notas e arquivos.", "Sem cartão"],
-    ["PRO · MAIS POPULAR", "50 GB", "a partir de US$2,99/mês", "Espaço para um rolo da câmera de verdade, com alertas de invasão e código isca.", "7 dias grátis"],
-    ["MAX", "200 GB", "a partir de US$5,99/mês", "Tudo do Pro, com espaço para anos de fotos e vídeos da família.", "7 dias grátis"]
+    [
+      "GRÁTIS",
+      "500 MB",
+      "grátis para sempre",
+      "O cofre completo: fotos e vídeos com Face ID, além de senhas, cartões, notas e arquivos.",
+      "Sem cartão"
+    ],
+    [
+      "PRO · MAIS POPULAR",
+      "50 GB",
+      "a partir de US$2,99/mês",
+      "Espaço para um rolo da câmera de verdade, com alertas de invasão e código isca.",
+      "7 dias grátis"
+    ],
+    [
+      "MAX",
+      "200 GB",
+      "a partir de US$5,99/mês",
+      "Tudo do Pro, com espaço para anos de fotos e vídeos da família.",
+      "7 dias grátis"
+    ]
   ],
   "faq_kick": "Bom saber",
   "faq_h2": "Perguntas e respostas.",
   "faqs": [
-    ["O Safey consegue liberar espaço no meu celular?", "Sim. Leve fotos e vídeos para o cofre do Safey, depois remova da biblioteca de Fotos e esvazie Apagados Recentemente. As lembranças ficam seguras e privadas no cofre, e o espaço que ocupavam no rolo da câmera é liberado. O plano grátis guarda 500 MB. O Pro (50 GB) e o Max (200 GB) guardam muito mais."],
-    ["Como escondo fotos e vídeos?", "Abra o cofre de fotos do Safey e importe as fotos e vídeos que quer esconder. Eles vão para um álbum trancado com Face ID e saem do rolo da câmera, então nunca aparecem quando alguém rola suas fotos."],
-    ["O Safey é realmente privado?", "Senhas, números de cartão, CVCs, PINs e o conteúdo das notas são criptografados com AES-256 no seu celular antes de serem enviados. A chave fica nas Chaves do aparelho e nunca sai de lá, então nossos servidores só veem texto cifrado. Fotos e vídeos saem do rolo da câmera para o seu cofre e ficam trancados atrás do Face ID, mas ainda não são criptografados em repouso. Preferimos dizer isso a insinuar o contrário."],
-    ["O que posso guardar no Safey?", "Senhas e logins, cartões de pagamento, notas seguras, qualquer arquivo ou documento (identidades, certificados, PDFs) e fotos e vídeos privados em um álbum oculto, trancado com Face ID."],
-    ["E se eu perder o celular?", "Seu cofre é protegido por Face ID, Touch ID ou pelo código do aparelho, então ninguém abre o Safey sem isso. Seus dados sincronizam de forma privada, e você restaura tudo em um celular novo fazendo login."],
-    ["O Safey é grátis?", "O Safey é grátis para baixar e usar com 500 MB. O Safey Pro é opcional: começa com 7 dias grátis e depois renova pelo preço mostrado no app, a menos que você cancele."],
-    ["O Safey está disponível para Android?", "Sim. O Safey é grátis no Google Play para celulares Android, com o mesmo cofre, código isca e alertas de invasão do iPhone."]
+    [
+      "O Safey consegue liberar espaço no meu celular?",
+      "Sim. Leve fotos e vídeos para o cofre do Safey, depois remova da biblioteca de Fotos e esvazie Apagados Recentemente. As lembranças ficam seguras e privadas no cofre, e o espaço que ocupavam no rolo da câmera é liberado. O plano grátis guarda 500 MB. O Pro (50 GB) e o Max (200 GB) guardam muito mais."
+    ],
+    [
+      "Como escondo fotos e vídeos?",
+      "Abra o cofre de fotos do Safey e importe as fotos e vídeos que quer esconder. Eles vão para um álbum trancado com Face ID e saem do rolo da câmera, então nunca aparecem quando alguém rola suas fotos."
+    ],
+    [
+      "O Safey é realmente privado?",
+      "Senhas, números de cartão, CVCs, PINs e o conteúdo das notas são criptografados com AES-256 no seu celular antes de serem enviados. A chave fica nas Chaves do aparelho e nunca sai de lá, então nossos servidores só veem texto cifrado. Fotos e vídeos saem do rolo da câmera para o seu cofre e ficam trancados atrás do Face ID."
+    ],
+    [
+      "O que posso guardar no Safey?",
+      "Senhas e logins, cartões de pagamento, notas seguras, qualquer arquivo ou documento (identidades, certificados, PDFs) e fotos e vídeos privados em um álbum oculto, trancado com Face ID."
+    ],
+    [
+      "E se eu perder o celular?",
+      "Seu cofre é protegido por Face ID, Touch ID ou pelo código do aparelho, então ninguém abre o Safey sem isso. Seus dados sincronizam de forma privada, e você restaura tudo em um celular novo fazendo login."
+    ],
+    [
+      "O Safey é grátis?",
+      "O Safey é grátis para baixar e usar com 500 MB. O Safey Pro é opcional: começa com 7 dias grátis e depois renova pelo preço mostrado no app, a menos que você cancele."
+    ],
+    [
+      "O Safey está disponível para Android?",
+      "Sim. O Safey é grátis no Google Play para celulares Android, com o mesmo cofre, código isca e alertas de invasão do iPhone."
+    ]
   ],
   "guides_kick": "Guias",
   "guides_h2": "Armazenamento e privacidade, explicados.",

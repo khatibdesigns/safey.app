@@ -20,17 +20,36 @@
   "used_before": "61,8 GB von 64 GB belegt",
   "used_after": "37,5 GB von 64 GB belegt",
   "saved": "24,3 GB wieder frei auf deinem Handy",
-  "legend": ["Fotos", "Apps", "Nachrichten", "System", "Sonstiges"],
+  "legend": [
+    "Fotos",
+    "Apps",
+    "Nachrichten",
+    "System",
+    "Sonstiges"
+  ],
   "toggle_title": "Fotos & Videos in Safey verschieben",
   "toggle_sub": "Mit Face ID gesperrt, dann aus Fotos gelöscht",
-  "secline": ["<b>Face ID</b> zum Öffnen", "<b>AES-256</b> für Passwörter, Karten & Notizen", "<b>500 MB</b> gratis, 50 GB ab 2,99 $"],
+  "secline": [
+    "<b>Face ID</b> zum Öffnen",
+    "<b>AES-256</b> für Passwörter, Karten & Notizen",
+    "<b>500 MB</b> gratis, 50 GB ab 2,99 $"
+  ],
   "example_note": "Beispielwerte. Wie viel du zurückbekommst, hängt davon ab, wie viele Fotos du verschiebst.",
   "steps_kick": "So funktioniert's",
   "steps_h2": "Drei Schritte zu einem leichteren Handy.",
   "steps": [
-    ["In Safey importieren", "Wähle die Fotos und Videos, die du behalten willst. Sie landen in deinem Tresor, gesperrt mit Face ID."],
-    ["Aus Fotos löschen", "Entferne sie aus deiner Mediathek und leere dann „Zuletzt gelöscht“. So wird der Platz wirklich frei."],
-    ["Jede Erinnerung behalten", "Öffne sie in Safey, wann du willst. Dein Handy hat wieder Platz für neue."]
+    [
+      "In Safey importieren",
+      "Wähle die Fotos und Videos, die du behalten willst. Sie landen in deinem Tresor, gesperrt mit Face ID."
+    ],
+    [
+      "Aus Fotos löschen",
+      "Entferne sie aus deiner Mediathek und leere dann „Zuletzt gelöscht“. So wird der Platz wirklich frei."
+    ],
+    [
+      "Jede Erinnerung behalten",
+      "Öffne sie in Safey, wann du willst. Dein Handy hat wieder Platz für neue."
+    ]
   ],
   "steps_fine": "Der kostenlose Tarif fasst 500 MB. Für eine volle Mediathek bietet Safey Pro 50 GB und Max 200 GB.",
   "see_plans": "Tarife ansehen",
@@ -38,43 +57,120 @@
   "vault_h2": "Nicht nur Fotos.",
   "vault_p": "Dieselbe Sperre schützt den Rest deines privaten Lebens an einem Ort.",
   "vault_rows": [
-    ["Fotos & Videos", "Raus aus der Mediathek, rein in ein Face-ID-Album"],
-    ["Passwörter & Logins", "Mit starkem Passwort-Generator auf einen Tipp"],
-    ["Karten, PINs & CVCs", "Erst nach einer Face-ID-Prüfung sichtbar"],
-    ["Sichere Notizen", "Wiederherstellungscodes, WLAN-Passwörter, Passdaten"],
-    ["Dateien & Dokumente", "Ausweise, Zertifikate, Verträge und PDFs"]
+    [
+      "Fotos & Videos",
+      "Raus aus der Mediathek, rein in ein Face-ID-Album"
+    ],
+    [
+      "Passwörter & Logins",
+      "Mit starkem Passwort-Generator auf einen Tipp"
+    ],
+    [
+      "Karten, PINs & CVCs",
+      "Erst nach einer Face-ID-Prüfung sichtbar"
+    ],
+    [
+      "Sichere Notizen",
+      "Wiederherstellungscodes, WLAN-Passwörter, Passdaten"
+    ],
+    [
+      "Dateien & Dokumente",
+      "Ausweise, Zertifikate, Verträge und PDFs"
+    ]
   ],
   "dashboard_alt": "Safey-Tresor-Startbildschirm mit Fotos, Passwörtern, Karten, Notizen und Dateien",
   "priv_kick": "Und es ist privat",
   "priv_h2": "Nur dein Gesicht öffnet ihn.",
   "priv_p": "Passwörter, Karten und Notizen werden auf deinem Handy mit AES-256 verschlüsselt, bevor sie synchronisiert werden. Der Schlüssel bleibt im Schlüsselbund deines Geräts, damit niemand sie lesen kann. Kein Angreifer und auch nicht wir.",
-  "priv_honest": "Fotos und Videos sind in deinem Tresor mit Face ID gesperrt. Sie sind noch nicht im Ruhezustand verschlüsselt. Das sagen wir dir lieber, als dass du es einfach annimmst.",
   "priv_rows": [
-    ["Sperre", "", "Face ID"],
-    ["Passwörter, Karten, Notizen", "", "AES-256"],
-    ["Verschlüsselungsschlüssel", "", "Auf deinem Gerät"],
-    ["Automatische Sperre", "", "Sofort"],
-    ["Einbruchsfotos", "Sieh, wer deinen Tresor öffnen wollte", "PRO"],
-    ["Tarn-Code", "Öffnet unter Druck einen leeren Tresor", "PRO"]
+    [
+      "Sperre",
+      "",
+      "Face ID"
+    ],
+    [
+      "Passwörter, Karten, Notizen",
+      "",
+      "AES-256"
+    ],
+    [
+      "Verschlüsselungsschlüssel",
+      "",
+      "Auf deinem Gerät"
+    ],
+    [
+      "Automatische Sperre",
+      "",
+      "Sofort"
+    ],
+    [
+      "Einbruchsfotos",
+      "Sieh, wer deinen Tresor öffnen wollte",
+      "PRO"
+    ],
+    [
+      "Tarn-Code",
+      "Öffnet unter Druck einen leeren Tresor",
+      "PRO"
+    ]
   ],
   "price_kick": "Preise",
   "price_h2": "Wähle deine Größe.",
   "price_p": "Starte gratis. Wechsle, wenn deine Mediathek wächst. Pro und Max beginnen mit 7 Tagen gratis.",
   "tiers": [
-    ["GRATIS", "500 MB", "für immer gratis", "Der ganze Tresor: Fotos und Videos hinter Face ID, dazu Passwörter, Karten, Notizen und Dateien.", "Keine Karte nötig"],
-    ["PRO · AM BELIEBTESTEN", "50 GB", "ab 2,99 $/Monat", "Platz für eine echte Mediathek, dazu Einbruchsfotos und ein Tarn-Code.", "7 Tage gratis"],
-    ["MAX", "200 GB", "ab 5,99 $/Monat", "Alles aus Pro, mit Platz für Jahre an Familienfotos und Videos.", "7 Tage gratis"]
+    [
+      "GRATIS",
+      "500 MB",
+      "für immer gratis",
+      "Der ganze Tresor: Fotos und Videos hinter Face ID, dazu Passwörter, Karten, Notizen und Dateien.",
+      "Keine Karte nötig"
+    ],
+    [
+      "PRO · AM BELIEBTESTEN",
+      "50 GB",
+      "ab 2,99 $/Monat",
+      "Platz für eine echte Mediathek, dazu Einbruchsfotos und ein Tarn-Code.",
+      "7 Tage gratis"
+    ],
+    [
+      "MAX",
+      "200 GB",
+      "ab 5,99 $/Monat",
+      "Alles aus Pro, mit Platz für Jahre an Familienfotos und Videos.",
+      "7 Tage gratis"
+    ]
   ],
   "faq_kick": "Gut zu wissen",
   "faq_h2": "Fragen und Antworten.",
   "faqs": [
-    ["Kann Safey Speicher auf meinem Handy freigeben?", "Ja. Verschiebe Fotos und Videos in den Tresor von Safey, entferne sie dann aus deiner Fotos-Mediathek und leere „Zuletzt gelöscht“. Die Erinnerungen bleiben sicher und privat im Tresor, und der Platz auf deinem Handy wird frei. Der kostenlose Tarif fasst 500 MB. Pro (50 GB) und Max (200 GB) fassen deutlich mehr."],
-    ["Wie verstecke ich Fotos und Videos?", "Öffne den Foto-Tresor in Safey und importiere die Bilder und Videos, die du verstecken willst. Sie wandern in ein Album mit Face-ID-Sperre und verschwinden aus deiner Mediathek. So tauchen sie nie auf, wenn jemand durch deine Fotos scrollt."],
-    ["Ist Safey wirklich privat?", "Passwörter, Kartennummern, CVCs, PINs und Notizinhalte werden auf deinem Handy mit AES-256 verschlüsselt, bevor sie hochgeladen werden. Der Schlüssel liegt im Schlüsselbund deines Geräts und verlässt es nie. Unsere Server sehen also nur verschlüsselte Daten. Fotos und Videos werden aus deiner Mediathek in deinen Tresor verschoben und mit Face ID gesperrt, sie sind aber noch nicht im Ruhezustand verschlüsselt. Das sagen wir dir lieber, als etwas anderes anzudeuten."],
-    ["Was kann ich in Safey speichern?", "Passwörter und Logins, Zahlungskarten, sichere Notizen, beliebige Dateien und Dokumente (Ausweise, Zertifikate, PDFs) sowie private Fotos und Videos in einem versteckten Album mit Face-ID-Sperre."],
-    ["Was passiert, wenn ich mein Handy verliere?", "Dein Tresor ist mit Face ID, Touch ID oder dem Code deines Geräts gesperrt. Ohne das kann niemand Safey öffnen. Deine Daten werden privat synchronisiert. Auf einem neuen Handy meldest du dich einfach an und stellst alles wieder her."],
-    ["Ist Safey kostenlos?", "Safey ist kostenlos zu laden und zu nutzen, mit 500 MB. Safey Pro ist optional: Es startet mit 7 Tagen gratis und verlängert sich danach zum Preis, der in der App steht, wenn du nicht kündigst."],
-    ["Gibt es Safey auch für Android?", "Ja. Safey ist kostenlos bei Google Play für Android-Smartphones, mit demselben Tresor, dem Tarn-Code und den Einbruchswarnungen wie auf dem iPhone."]
+    [
+      "Kann Safey Speicher auf meinem Handy freigeben?",
+      "Ja. Verschiebe Fotos und Videos in den Tresor von Safey, entferne sie dann aus deiner Fotos-Mediathek und leere „Zuletzt gelöscht“. Die Erinnerungen bleiben sicher und privat im Tresor, und der Platz auf deinem Handy wird frei. Der kostenlose Tarif fasst 500 MB. Pro (50 GB) und Max (200 GB) fassen deutlich mehr."
+    ],
+    [
+      "Wie verstecke ich Fotos und Videos?",
+      "Öffne den Foto-Tresor in Safey und importiere die Bilder und Videos, die du verstecken willst. Sie wandern in ein Album mit Face-ID-Sperre und verschwinden aus deiner Mediathek. So tauchen sie nie auf, wenn jemand durch deine Fotos scrollt."
+    ],
+    [
+      "Ist Safey wirklich privat?",
+      "Passwörter, Kartennummern, CVCs, PINs und Notizinhalte werden auf deinem Handy mit AES-256 verschlüsselt, bevor sie hochgeladen werden. Der Schlüssel liegt im Schlüsselbund deines Geräts und verlässt es nie. Unsere Server sehen also nur verschlüsselte Daten. Fotos und Videos werden aus deiner Mediathek in deinen Tresor verschoben und mit Face ID gesperrt."
+    ],
+    [
+      "Was kann ich in Safey speichern?",
+      "Passwörter und Logins, Zahlungskarten, sichere Notizen, beliebige Dateien und Dokumente (Ausweise, Zertifikate, PDFs) sowie private Fotos und Videos in einem versteckten Album mit Face-ID-Sperre."
+    ],
+    [
+      "Was passiert, wenn ich mein Handy verliere?",
+      "Dein Tresor ist mit Face ID, Touch ID oder dem Code deines Geräts gesperrt. Ohne das kann niemand Safey öffnen. Deine Daten werden privat synchronisiert. Auf einem neuen Handy meldest du dich einfach an und stellst alles wieder her."
+    ],
+    [
+      "Ist Safey kostenlos?",
+      "Safey ist kostenlos zu laden und zu nutzen, mit 500 MB. Safey Pro ist optional: Es startet mit 7 Tagen gratis und verlängert sich danach zum Preis, der in der App steht, wenn du nicht kündigst."
+    ],
+    [
+      "Gibt es Safey auch für Android?",
+      "Ja. Safey ist kostenlos bei Google Play für Android-Smartphones, mit demselben Tresor, dem Tarn-Code und den Einbruchswarnungen wie auf dem iPhone."
+    ]
   ],
   "guides_kick": "Ratgeber",
   "guides_h2": "Speicher & Privatsphäre, einfach erklärt.",

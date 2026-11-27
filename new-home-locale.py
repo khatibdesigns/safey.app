@@ -215,8 +215,7 @@ def body(t, lang):
 
   <section>
     <div class="wrap split">
-      <div class="sh" style="margin:0"><span class="kick">{esc(t["priv_kick"])}</span><h2>{esc(t["priv_h2"])}</h2><p>{esc(t["priv_p"])}</p>
-        <p class="honest">{esc(t["priv_honest"])}</p></div>
+      <div class="sh" style="margin:0"><span class="kick">{esc(t["priv_kick"])}</span><h2>{esc(t["priv_h2"])}</h2><p>{esc(t["priv_p"])}</p></div>
       <ul class="group">
         {priv}
       </ul>

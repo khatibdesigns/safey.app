@@ -82,7 +82,6 @@
   "priv_kick": "Ve gizli",
   "priv_h2": "Yalnızca yüzün açar.",
   "priv_p": "Şifreler, kartlar ve notlar senkronize edilmeden önce telefonunda AES-256 ile şifrelenir. Anahtar cihazının Anahtar Zinciri'nde kalır. Kimse okuyamaz. Ne bir saldırgan ne de biz.",
-  "priv_honest": "Fotoğraf ve videolar kasanda Face ID arkasında kilitlidir. Henüz bekleme durumunda şifrelenmiyor. Sen varsaymadan önce bunu açıkça söylemeyi tercih ederiz.",
   "priv_rows": [
     [
       "Kilit",
@@ -154,7 +153,7 @@
     ],
     [
       "Safey gerçekten gizli mi?",
-      "Şifreler, kart numaraları, CVC'ler, PIN'ler ve not içerikleri yüklenmeden önce telefonunda AES-256 ile şifrelenir. Anahtar cihazının Anahtar Zinciri'nde durur ve oradan hiç çıkmaz. Bu yüzden sunucularımız yalnızca şifreli veriyi görür. Fotoğraf ve videolar film rulosundan kasana taşınır ve Face ID arkasında kilitlenir, ancak henüz bekleme durumunda şifrelenmez. Aksini ima etmektense bunu açıkça söylemeyi tercih ederiz."
+      "Şifreler, kart numaraları, CVC'ler, PIN'ler ve not içerikleri yüklenmeden önce telefonunda AES-256 ile şifrelenir. Anahtar cihazının Anahtar Zinciri'nde durur ve oradan hiç çıkmaz. Bu yüzden sunucularımız yalnızca şifreli veriyi görür. Fotoğraf ve videolar film rulosundan kasana taşınır ve Face ID arkasında kilitlenir."
     ],
     [
       "Safey'de neleri saklayabilirim?",

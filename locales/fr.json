@@ -20,17 +20,36 @@
   "used_before": "61,8 GB utilisés sur 64 GB",
   "used_after": "37,5 GB utilisés sur 64 GB",
   "saved": "24,3 GB récupérés sur votre téléphone",
-  "legend": ["Photos", "Apps", "Messages", "Système", "Autre"],
+  "legend": [
+    "Photos",
+    "Apps",
+    "Messages",
+    "Système",
+    "Autre"
+  ],
   "toggle_title": "Déplacer photos et vidéos vers Safey",
   "toggle_sub": "Verrouillées par Face ID, puis supprimées de Photos",
-  "secline": ["<b>Face ID</b> pour ouvrir", "<b>AES-256</b> pour mots de passe, cartes et notes", "<b>500 MB</b> gratuits, 50 GB dès 2,99 $"],
+  "secline": [
+    "<b>Face ID</b> pour ouvrir",
+    "<b>AES-256</b> pour mots de passe, cartes et notes",
+    "<b>500 MB</b> gratuits, 50 GB dès 2,99 $"
+  ],
   "example_note": "Chiffres donnés à titre d'exemple. L'espace récupéré dépend du nombre de photos déplacées.",
   "steps_kick": "Comment ça marche",
   "steps_h2": "Trois étapes pour un téléphone plus léger.",
   "steps": [
-    ["Importez dans Safey", "Choisissez les photos et vidéos à garder. Elles vont dans votre coffre, verrouillé par Face ID."],
-    ["Supprimez de Photos", "Retirez-les de votre pellicule, puis videz « Supprimés récemment » pour récupérer l'espace."],
-    ["Gardez tous vos souvenirs", "Ouvrez-les dans Safey quand vous voulez. Votre téléphone garde de la place pour les prochains."]
+    [
+      "Importez dans Safey",
+      "Choisissez les photos et vidéos à garder. Elles vont dans votre coffre, verrouillé par Face ID."
+    ],
+    [
+      "Supprimez de Photos",
+      "Retirez-les de votre pellicule, puis videz « Supprimés récemment » pour récupérer l'espace."
+    ],
+    [
+      "Gardez tous vos souvenirs",
+      "Ouvrez-les dans Safey quand vous voulez. Votre téléphone garde de la place pour les prochains."
+    ]
   ],
   "steps_fine": "L'offre gratuite contient 500 MB. Pour une pellicule bien remplie, Safey Pro contient 50 GB et Max 200 GB.",
   "see_plans": "Voir les offres",
@@ -38,43 +57,120 @@
   "vault_h2": "Pas seulement des photos.",
   "vault_p": "Le même verrou garde le reste de votre vie privée au même endroit.",
   "vault_rows": [
-    ["Photos et vidéos", "Hors de la pellicule, dans un album Face ID"],
-    ["Mots de passe et identifiants", "Avec un générateur de mots de passe forts en un geste"],
-    ["Cartes, PIN et CVC", "Affichés seulement après une vérification Face ID"],
-    ["Notes sécurisées", "Codes de récupération, mots de passe wifi, données de passeport"],
-    ["Fichiers et documents", "Pièces d'identité, certificats, contrats et PDF"]
+    [
+      "Photos et vidéos",
+      "Hors de la pellicule, dans un album Face ID"
+    ],
+    [
+      "Mots de passe et identifiants",
+      "Avec un générateur de mots de passe forts en un geste"
+    ],
+    [
+      "Cartes, PIN et CVC",
+      "Affichés seulement après une vérification Face ID"
+    ],
+    [
+      "Notes sécurisées",
+      "Codes de récupération, mots de passe wifi, données de passeport"
+    ],
+    [
+      "Fichiers et documents",
+      "Pièces d'identité, certificats, contrats et PDF"
+    ]
   ],
   "dashboard_alt": "Écran d'accueil du coffre Safey avec photos, mots de passe, cartes, notes et fichiers",
   "priv_kick": "Et c'est privé",
   "priv_h2": "Seul votre visage l'ouvre.",
   "priv_p": "Mots de passe, cartes et notes sont chiffrés en AES-256 sur votre téléphone avant d'être synchronisés. La clé reste dans le trousseau de votre appareil : personne d'autre ne peut les lire. Ni un pirate, ni nous.",
-  "priv_honest": "Les photos et vidéos sont verrouillées derrière Face ID dans votre coffre. Elles ne sont pas encore chiffrées au repos, et nous préférons vous le dire plutôt que vous laisser le supposer.",
   "priv_rows": [
-    ["Verrou", "", "Face ID"],
-    ["Mots de passe, cartes, notes", "", "AES-256"],
-    ["Clé de chiffrement", "", "Sur votre appareil"],
-    ["Verrouillage auto", "", "Immédiat"],
-    ["Photos d'intrusion", "Voyez qui a essayé d'ouvrir votre coffre", "PRO"],
-    ["Code leurre", "Ouvre un coffre vide sous la contrainte", "PRO"]
+    [
+      "Verrou",
+      "",
+      "Face ID"
+    ],
+    [
+      "Mots de passe, cartes, notes",
+      "",
+      "AES-256"
+    ],
+    [
+      "Clé de chiffrement",
+      "",
+      "Sur votre appareil"
+    ],
+    [
+      "Verrouillage auto",
+      "",
+      "Immédiat"
+    ],
+    [
+      "Photos d'intrusion",
+      "Voyez qui a essayé d'ouvrir votre coffre",
+      "PRO"
+    ],
+    [
+      "Code leurre",
+      "Ouvre un coffre vide sous la contrainte",
+      "PRO"
+    ]
   ],
   "price_kick": "Tarifs",
   "price_h2": "Choisissez votre taille.",
   "price_p": "Commencez gratuitement. Passez à plus grand quand votre pellicule grandit. Pro et Max commencent par 7 jours gratuits.",
   "tiers": [
-    ["GRATUIT", "500 MB", "gratuit pour toujours", "Le coffre complet : photos et vidéos derrière Face ID, plus mots de passe, cartes, notes et fichiers.", "Sans carte bancaire"],
-    ["PRO · LE PLUS POPULAIRE", "50 GB", "dès 2,99 $/mois", "De la place pour une vraie pellicule, plus les photos d'intrusion et un code leurre.", "7 jours gratuits"],
-    ["MAX", "200 GB", "dès 5,99 $/mois", "Tout Pro, avec de la place pour des années de photos et vidéos de famille.", "7 jours gratuits"]
+    [
+      "GRATUIT",
+      "500 MB",
+      "gratuit pour toujours",
+      "Le coffre complet : photos et vidéos derrière Face ID, plus mots de passe, cartes, notes et fichiers.",
+      "Sans carte bancaire"
+    ],
+    [
+      "PRO · LE PLUS POPULAIRE",
+      "50 GB",
+      "dès 2,99 $/mois",
+      "De la place pour une vraie pellicule, plus les photos d'intrusion et un code leurre.",
+      "7 jours gratuits"
+    ],
+    [
+      "MAX",
+      "200 GB",
+      "dès 5,99 $/mois",
+      "Tout Pro, avec de la place pour des années de photos et vidéos de famille.",
+      "7 jours gratuits"
+    ]
   ],
   "faq_kick": "Bon à savoir",
   "faq_h2": "Vos questions, nos réponses.",
   "faqs": [
-    ["Safey peut-il libérer de l'espace sur mon téléphone ?", "Oui. Déplacez photos et vidéos dans le coffre de Safey, puis retirez-les de votre photothèque et videz « Supprimés récemment ». Vos souvenirs restent en sécurité et privés dans le coffre, et l'espace qu'ils occupaient sur la pellicule est libéré. L'offre gratuite contient 500 MB ; Pro (50 GB) et Max (200 GB) en contiennent bien plus."],
-    ["Comment cacher des photos et vidéos ?", "Ouvrez le coffre photo de Safey et importez les photos et vidéos à cacher. Elles passent dans un album verrouillé par Face ID et disparaissent de votre pellicule : personne ne les voit en faisant défiler vos photos."],
-    ["Safey est-il vraiment privé ?", "Mots de passe, numéros de carte, CVC, codes PIN et contenu des notes sont chiffrés en AES-256 sur votre téléphone avant l'envoi. La clé reste dans le trousseau de votre appareil et ne le quitte jamais : nos serveurs ne voient que du texte chiffré. Les photos et vidéos sont déplacées hors de votre pellicule vers votre coffre et verrouillées derrière Face ID, mais elles ne sont pas encore chiffrées au repos. Nous préférons vous le dire plutôt que de laisser croire le contraire."],
-    ["Que puis-je ranger dans Safey ?", "Mots de passe et identifiants, cartes de paiement, notes sécurisées, tous vos fichiers et documents (pièces d'identité, certificats, PDF), ainsi que photos et vidéos privées dans un album caché, verrouillé par Face ID."],
-    ["Et si je perds mon téléphone ?", "Votre coffre est protégé par Face ID, Touch ID ou le code de l'appareil : personne ne peut ouvrir Safey sans cela. Vos données se synchronisent en privé, donc vous retrouvez tout sur un nouveau téléphone en vous connectant."],
-    ["Safey est-il gratuit ?", "Safey est gratuit à télécharger et à utiliser, avec 500 MB. Safey Pro est facultatif : il commence par 7 jours d'essai gratuit, puis se renouvelle au prix affiché dans l'app, sauf résiliation."],
-    ["Safey est-il disponible sur Android ?", "Oui. Safey est gratuit sur Google Play pour les téléphones Android, avec le même coffre, le code leurre et les alertes d'intrusion que sur iPhone."]
+    [
+      "Safey peut-il libérer de l'espace sur mon téléphone ?",
+      "Oui. Déplacez photos et vidéos dans le coffre de Safey, puis retirez-les de votre photothèque et videz « Supprimés récemment ». Vos souvenirs restent en sécurité et privés dans le coffre, et l'espace qu'ils occupaient sur la pellicule est libéré. L'offre gratuite contient 500 MB ; Pro (50 GB) et Max (200 GB) en contiennent bien plus."
+    ],
+    [
+      "Comment cacher des photos et vidéos ?",
+      "Ouvrez le coffre photo de Safey et importez les photos et vidéos à cacher. Elles passent dans un album verrouillé par Face ID et disparaissent de votre pellicule : personne ne les voit en faisant défiler vos photos."
+    ],
+    [
+      "Safey est-il vraiment privé ?",
+      "Mots de passe, numéros de carte, CVC, codes PIN et contenu des notes sont chiffrés en AES-256 sur votre téléphone avant l'envoi. La clé reste dans le trousseau de votre appareil et ne le quitte jamais : nos serveurs ne voient que du texte chiffré. Les photos et vidéos sont déplacées hors de votre pellicule vers votre coffre et verrouillées derrière Face ID."
+    ],
+    [
+      "Que puis-je ranger dans Safey ?",
+      "Mots de passe et identifiants, cartes de paiement, notes sécurisées, tous vos fichiers et documents (pièces d'identité, certificats, PDF), ainsi que photos et vidéos privées dans un album caché, verrouillé par Face ID."
+    ],
+    [
+      "Et si je perds mon téléphone ?",
+      "Votre coffre est protégé par Face ID, Touch ID ou le code de l'appareil : personne ne peut ouvrir Safey sans cela. Vos données se synchronisent en privé, donc vous retrouvez tout sur un nouveau téléphone en vous connectant."
+    ],
+    [
+      "Safey est-il gratuit ?",
+      "Safey est gratuit à télécharger et à utiliser, avec 500 MB. Safey Pro est facultatif : il commence par 7 jours d'essai gratuit, puis se renouvelle au prix affiché dans l'app, sauf résiliation."
+    ],
+    [
+      "Safey est-il disponible sur Android ?",
+      "Oui. Safey est gratuit sur Google Play pour les téléphones Android, avec le même coffre, le code leurre et les alertes d'intrusion que sur iPhone."
+    ]
   ],
   "guides_kick": "Guides",
   "guides_h2": "Stockage et confidentialité, expliqués.",

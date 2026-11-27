@@ -103,7 +103,6 @@ section{padding:88px 0}
 .group .v.pro{font-size:12px;font-weight:700;color:var(--vault-ink);background:#E6F0FF;border-radius:6px;padding:3px 7px}
 .phone{width:min(300px,78vw);margin:0 auto;aspect-ratio:292/610;border-radius:46px;padding:10px;background:#1C1C1E;box-shadow:0 40px 80px -40px rgba(20,30,60,.45)}
 .phone img{width:100%;height:100%;object-fit:cover;border-radius:37px}
-.honest{margin-top:16px;font-size:14px;color:var(--mute);max-width:60ch}
 
 /* pricing */
 .tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}

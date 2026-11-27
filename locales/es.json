@@ -82,7 +82,6 @@
   "priv_kick": "Y es privado",
   "priv_h2": "Solo tu cara lo abre.",
   "priv_p": "Las contraseñas, tarjetas y notas se cifran con AES-256 en tu teléfono antes de sincronizarse. La clave se queda en el llavero de tu dispositivo, así que nadie más puede leerlas. Ni un atacante, ni nosotros.",
-  "priv_honest": "Las fotos y videos quedan bloqueados con Face ID en tu bóveda. Todavía no están cifrados en reposo, y preferimos decírtelo a que lo des por hecho.",
   "priv_rows": [
     [
       "Bloqueo",
@@ -154,7 +153,7 @@
     ],
     [
       "¿Safey es realmente privado?",
-      "Las contraseñas, números de tarjeta, CVC, PIN y el contenido de las notas se cifran con AES-256 en tu teléfono antes de subirse. La clave vive en el llavero de tu dispositivo y nunca sale de él, así que nuestros servidores solo ven texto cifrado. Las fotos y videos salen de tu carrete a tu bóveda y quedan bloqueados con Face ID, pero todavía no están cifrados en reposo. Preferimos decírtelo a dar a entender otra cosa."
+      "Las contraseñas, números de tarjeta, CVC, PIN y el contenido de las notas se cifran con AES-256 en tu teléfono antes de subirse. La clave vive en el llavero de tu dispositivo y nunca sale de él, así que nuestros servidores solo ven texto cifrado. Las fotos y videos salen de tu carrete a tu bóveda y quedan bloqueados con Face ID."
     ],
     [
       "¿Qué puedo guardar en Safey?",
